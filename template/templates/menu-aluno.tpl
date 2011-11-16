@@ -1,21 +1,19 @@
 <div id="menu">
 					<ul>
 						<li>
-							<a href="consulta-usuario.php?from=aluno">Consulta</a>
+							<a href="aluno.php?from=aluno">Início</a>
 						</li>
 						<li>
-							<a href="consulta-usuario.php?from=coordenador">Nova AC</a>
-						</li>
-						<li>
-							<a href="consulta-usuario.php?from=administrador">Administrador</a>
-								
-						</li>
-						<li>
-							<a href="consulta-curso.php">Cursos</a>
+							<a href="form-ac.php">Cadastrar Atividade</a>
 						</li>					
+						<li>
+							<a href="consulta-ac.php?from=aluno">Consulta AC</a>
+						</li>
+						<li>
+							<a href="relatorio-aluno.php?tipo=atividade">Relatório Atividade</a>
+						</li>
 						<li class="last">
-							<a href="#">Categorias</a> <!-- Qual o motivo da classe aqui???-->
-							
+							<a href="relatorio-aluno.php?tipo=carga">Relatório CH</a>
 						</li>					
 					</ul>
 				</div>

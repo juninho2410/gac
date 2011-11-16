@@ -3,7 +3,8 @@
 {include file="menu-aluno.tpl" title=foo}
 
 <div id="content">
-	<p>Bem vindo {$smarty.session.nome} </p>
+	<p>Bem vindo  </p>
 </div>
-
+<h1>
+{$teste}</h1>
 {include file="footer.tpl"}

@@ -41,6 +41,10 @@
 		
 		function insere($categoria){
 			$db=new Conexao();
+			$categoria->nome=$db->db->real_escape_string($categoria->nome);
+			$categoria->id=$db->db->real_escape_string($categoria->id);
+			$categoria->limiteCategoria=$db->db->real_escape_string($categoria->limiteCategoria);
+			$categoria->limiteAtividade=$db->db->real_escape_string($categoria->limiteAtividade);
 			$sql="Call proc_inserirCategoria('$categoria->nome',$categoria->limiteCategoria,$categoria->limiteAtividade)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
@@ -57,7 +61,9 @@
 		function altera($categoria){
 			$db=new Conexao();
 			$categoria->nome=$db->db->real_escape_string($categoria->nome);
-			$categoria->nome=$db->db->real_escape_string($categoria->nome);
+			$categoria->id=$db->db->real_escape_string($categoria->id);
+			$categoria->limiteCategoria=$db->db->real_escape_string($categoria->limiteCategoria);
+			$categoria->limiteAtividade=$db->db->real_escape_string($categoria->limiteAtividade);
 			$sql="Call proc_alterarCategoria('$categoria->nome',$categoria->id,$categoria->limiteCategoria,$categoria->limiteAtividade)";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -95,6 +101,7 @@
 		}
 		function listarCategoria($id){
 			$db=new Conexao();
+			$id=$db->db->real_escape_string($id);
 			$sql="Call proc_listarCategoria($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){

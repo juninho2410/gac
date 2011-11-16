@@ -41,6 +41,8 @@
 		
 		function insere($curso){
 			$db=new Conexao();
+			$curso->nome=$db-db->real_escape_string($curso->nome);
+			$curso->idCoordenador=$db-db->real_escape_string($curso->idCoordenador);
 			$sql="Call proc_inserirCurso('$curso->nome',$curso->idCoordenador)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
@@ -56,6 +58,8 @@
 		}
 		function altera($curso){
 			$db=new Conexao();
+			$curso->nome=$db-db->real_escape_string($curso->nome);
+			$curso->idCoordenador=$db-db->real_escape_string($curso->idCoordenador);
 			$sql="Call proc_alterarCurso('$curso->nome',$curso->id,$curso->idCoordenador)";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -93,6 +97,7 @@
 		}
 		function listarCurso($id){
 			$db=new Conexao();
+			$db->db->real_escape_string($id);
 			$sql="Call proc_listarCurso($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){

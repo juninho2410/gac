@@ -48,6 +48,11 @@
 		
 		function insere($usuario){
 			$db=new Conexao();
+			$usuario->login=$db->db->real_escape_string($usuario->login);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
+			$usuario->curso=$db->db->real_escape_string($usuario->curso);
 			$sql="Call proc_inserirAluno('$usuario->login','$usuario->senha','Aluno','$usuario->nome','$usuario->email',$usuario->curso,@msg)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
@@ -68,6 +73,10 @@
 		}
 		function altera($usuario){
 			$db=new Conexao();
+			$usuario->id=$db->db->real_escape_string($usuario->id);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
 			$sql="Call proc_alterarUsuario($usuario->id,'$usuario->email','$usuario->nome','$usuario->senha')";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -101,6 +110,7 @@
 		}
 		function listarAluno($ra){
 			$db=new Conexao();
+			$ra=$db->db->real_escape_string($ra);
 			$sql="Call proc_listarAluno($ra)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){

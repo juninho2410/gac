@@ -48,6 +48,10 @@
 		
 		function insere($usuario){
 			$db=new Conexao();
+			$usuario->login=$db->db->real_escape_string($usuario->login);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
 			$sql="Call proc_inserirCoordenador('$usuario->login','$usuario->senha','Coordenador','$usuario->nome','$usuario->email',@msg)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
@@ -68,6 +72,11 @@
 		}
 		function altera($usuario){
 			$db=new Conexao();
+			$usuario->id=$db->db->real_escape_string($usuario->id);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
+
 			$sql="Call proc_alterarUsuario($usuario->id,'$usuario->email','$usuario->nome','$usuario->senha')";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -129,6 +138,7 @@
 		}
 		function listarCoordenador($id){
 			$db=new Conexao();
+			$id=$db->db->real_escape_string($id);
 			$sql="Call proc_listarCoordenador($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){

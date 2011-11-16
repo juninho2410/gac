@@ -41,6 +41,10 @@
 		
 		function insere($usuario){
 			$db=new Conexao();
+			$usuario->login=$db->db->real_escape_string($usuario->login);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
 			$sql="Call proc_inserirAdministrador('$usuario->login','$usuario->senha','Coordenador','$usuario->nome','$usuario->email',@msg)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
@@ -60,6 +64,10 @@
 		}
 		function altera($usuario){
 			$db=new Conexao();
+			$usuario->id=$db->db->real_escape_string($usuario->id);
+			$usuario->senha=$db->db->real_escape_string($usuario->senha);
+			$usuario->nome=$db->db->real_escape_string($usuario->nome);
+			$usuario->email=$db->db->real_escape_string($usuario->email);
 			$sql="Call proc_alterarUsuario($usuario->id,'$usuario->email','$usuario->nome','$usuario->senha')";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -92,6 +100,7 @@
 		}
 		function listarAdministrador($id){
 			$db=new Conexao();
+			$ra=$id->db->real_escape_string($id);
 			$sql="Call proc_listarAdministrador($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){
