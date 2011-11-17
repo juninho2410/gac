@@ -4,7 +4,7 @@
 							<a href="aluno.php?from=aluno">Início</a>
 						</li>
 						<li>
-							<a href="form-ac.php">Cadastrar Atividade</a>
+							<a href="form-ac.php?action=cadastro">Cadastrar Atividade</a>
 						</li>					
 						<li>
 							<a href="consulta-ac.php?from=aluno">Consulta AC</a>

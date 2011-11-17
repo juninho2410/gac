@@ -145,7 +145,6 @@
 				$r=array();
 				array_push($r,$id);
 				array_push($r,$nome);
-			
 				return $r;
 			}
 			
