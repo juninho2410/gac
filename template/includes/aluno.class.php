@@ -108,6 +108,24 @@
 			}
 			
 		}
+		function relatorioPorTipo($ra){
+			$db=new Conexao();
+			$sql="Call proc_relatorioPorTipo($ra)";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					
+					array_push($r,$line);
+				};
+				return $r;
+			}
+			
+		}
 		function listarAluno($ra){
 			$db=new Conexao();
 			$ra=$db->db->real_escape_string($ra);

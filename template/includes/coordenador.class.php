@@ -111,6 +111,24 @@
 			}
 			
 		}
+		function relatorioAtividadesSolicitadas(){
+			$db=new Conexao();
+			$sql="Call proc_relatorioAtividadesSolicitadas";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					
+					array_push($r,$line);
+				};
+				return $r;
+			}
+			
+		}
 		function listaDropCoordenadores(){
 			$db=new Conexao();
 			$sql="Call proc_listaDropCoordenadores;";

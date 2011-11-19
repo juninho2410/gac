@@ -4,7 +4,9 @@
 	class Atividade{
 	protected $id;
 	protected $idCategoria;
+	protected $nomeCategoria;
 	protected $idAlunoRa;
+	protected $nomeAluno;
 	protected $titulo;
 	protected $dataRealizacao;
 	protected $ch;
@@ -26,8 +28,14 @@
 		function setIdCategoria($idCategoria){
 				$this->idCategoria=$idCategoria;
 		}
+		function setNomeCategoria($nomeCategoria){
+				$this->nomeCategoria=$nomeCategoria;
+		}
 		function setIdAlunoRa($idAlunoRa){
 				$this->idAlunoRa=$idAlunoRa;
+		}
+		function setNomeAluno($nomeAluno){
+				$this->nomeAluno=$nomeAluno;
 		}
 		function setTitulo($titulo){
 				$this->titulo=$titulo;
@@ -71,13 +79,19 @@
 		function getNomeArquivo(){
 				return $this->nomeArquivo;
 		}
+		function getNomeAluno(){
+				return $this->nomeAluno;
+		}
+		function getNomeCategoria(){
+				return $this->nomeCategoria;
+		}
 		function getStatus(){
 				return $this->status;
 		}
-		function getIdDescricao(){
+		function getDescricao(){
 				return $this->descricao;
 		}
-		function getIdComentario(){
+		function getComentario(){
 				return $this->comentario;
 		}
 		
@@ -90,7 +104,6 @@
 				$nome="";
 				while($line=$result->fetch_array(MYSQLI_ASSOC)){
 					$nome=$line['nome_arquivo'];
-					echo $nome;
 				}
 				return $nome;
 			}
@@ -98,9 +111,10 @@
 				return false;
 			}
 		}
-		function altera($usuario){
+		function altera($ac){
 			$db=new Conexao();
-			$sql="Call proc_alterarUsuario($usuario->id,'$usuario->email','$usuario->nome','$usuario->senha')";
+			
+			$sql="Call proc_alterarAc($ac->id,$ac->ch,'$ac->status','$ac->comentario')";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
 				return true;
@@ -125,6 +139,57 @@
 					$ac->setId($line['idAtividade']);
 					$ac->setTitulo($line['titulo']);
 					$ac->setStatus($line['status_ac']);
+					array_push($r,$ac);
+				};
+				return $r;
+			}
+			
+		}
+		function listarAcsCoordenador($id){
+			$db=new Conexao();
+			$db->db->real_escape_string($id);
+			$sql="Call proc_listarAcsCoordenador($id)";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					$ac=new Atividade();
+					$ac->setId($line['idAtividade']);
+					$ac->setTitulo($line['titulo']);
+					$ac->setStatus($line['status_ac']);
+					array_push($r,$ac);
+				};
+				return $r;
+			}
+			
+		}
+		function listarAcsCoordenadorDetalhes($id){
+			$db=new Conexao();
+			$db->db->real_escape_string($id);
+			$sql="Call proc_listarAcDetalhes($id)";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					$ac=new Atividade();
+					$ac->setCh($line['CH']);
+					$ac->setId($line['idAtividade']);
+					$ac->setTitulo($line['titulo']);
+					$ac->setStatus($line['status_ac']);
+					$ac->setDescricao($line['descricao']);
+					$ac->setDataRealizacao($line['dataRealizacao']);
+					$ac->setComentario($line['comentario']);
+					$ac->setNomeArquivo($line['nome_arquivo']);
+					$ac->setNomeAluno($line['nome_aluno']);
+					$ac->setNomeCategoria($line['nome_categoria']);
 					array_push($r,$ac);
 				};
 				return $r;

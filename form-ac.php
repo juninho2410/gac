@@ -26,7 +26,7 @@ require_once('./template/includes/ac.class.php');
 				
 				
 					if($nomeArquivo!=false){
-						//echo "<script>alert('Categoria cadastrado com sucesso!');location.href='consulta-ac.php?from=aluno';</script>";
+						//echo "<script>alert('Categoria cadastrado com sucesso!');location.href='consulta-ac.php';</script>";
 							$diretorio='comprovantes';
 						if(!is_dir($diretorio)){
 						
@@ -36,7 +36,7 @@ require_once('./template/includes/ac.class.php');
 						}
 						$dir = "$diretorio/".$nomeArquivo;
 						move_uploaded_file($_FILES['arquivo']["tmp_name"],$dir);
-						echo "<script>alert('Categoria cadastrado com sucesso!')</script>";
+						echo "<script>alert('Atividade cadastrado com sucesso!');location.href='consulta-ac.php';</script>";
 						echo $arquivo;
 					
 					}
