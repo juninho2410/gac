@@ -100,7 +100,7 @@
 		}
 		function listarAdministrador($id){
 			$db=new Conexao();
-			$ra=$id->db->real_escape_string($id);
+			$id=$db->db->real_escape_string($id);
 			$sql="Call proc_listarAdministrador($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){

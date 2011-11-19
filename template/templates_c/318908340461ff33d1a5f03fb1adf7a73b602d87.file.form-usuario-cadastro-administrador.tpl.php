@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:17:58
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:45:36
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\form-usuario-cadastro-administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:257944ec1b3960cfeb9-83130137%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '318908340461ff33d1a5f03fb1adf7a73b602d87' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\form-usuario-cadastro-administrador.tpl',
-      1 => 1321708180,
+      1 => 1321710334,
       2 => 'file',
     ),
   ),
@@ -41,16 +41,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			
 			<ul class="fields">
 				<li>
-					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150"/>
+					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150" value="<?php echo $_POST['nome'];?>
+"/>
 				</li>
 				<li>
-					<label for="email">Email:</label><input type="text" name="email" id="email" maxlenght="150" />
+					<label for="email">Email:</label><input type="text" name="email" id="email" maxlenght="150" value="<?php echo $_POST['email'];?>
+" />
 				</li>
 				<li>
-					<label for="login">Login:</label><input type="text" name="login" id="login" maxlenght="100" />
+					<label for="login">Login:</label><input type="text" name="login" id="login" maxlenght="100" value="<?php echo $_POST['login'];?>
+" />
 				</li>
 				<li>
-					<label for="senha">Senha:</label><input type="password" name="senha" id="senha" maxlenght="50" />
+					<label for="senha">Senha:</label><input type="password" name="senha" id="senha" maxlenght="50"value="<?php echo $_POST['senha'];?>
+" />
 				</li>
 			</ul>
 		</form>

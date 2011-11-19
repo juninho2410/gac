@@ -28,7 +28,7 @@
 					<td>{$ac->getId()}</td>
 					<td>{$ac->getTitulo()}</td>
 					<td>{$ac->getStatus()}</td>
-					<td><a href="form-ac.php?action=alteracao&id={$ac->getId()}">Editar</a></td>                
+					<td><a href="consulta-ac-aluno-detalhes.php?id={$ac->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
 			</tbody>

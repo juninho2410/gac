@@ -13,6 +13,7 @@ require_once('./template/includes/ac.class.php');
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 		if($_GET['action']=='cadastro'){
 			if(isset($_POST['titulo']) && isset($_POST['categoria']) && isset($_POST['descricao']) && isset($_POST['data']) && isset($_POST['carga']) && isset($_FILES['arquivo'])){
+			
 				$ac= new Atividade();
 				$ac->setIdAlunoRa($_SESSION['id']);
 				$ac->setTitulo($_POST['titulo']);

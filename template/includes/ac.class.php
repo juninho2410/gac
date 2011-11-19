@@ -196,6 +196,35 @@
 			}
 			
 		}
+		function listarAcsAlunoDetalhes($id){
+			$db=new Conexao();
+			$db->db->real_escape_string($id);
+			$sql="Call proc_listarAcDetalhes($id)";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					$ac=new Atividade();
+					$ac->setCh($line['CH']);
+					$ac->setId($line['idAtividade']);
+					$ac->setTitulo($line['titulo']);
+					$ac->setStatus($line['status_ac']);
+					$ac->setDescricao($line['descricao']);
+					$ac->setDataRealizacao($line['dataRealizacao']);
+					$ac->setComentario($line['comentario']);
+					$ac->setNomeArquivo($line['nome_arquivo']);
+					$ac->setNomeAluno($line['nome_aluno']);
+					$ac->setNomeCategoria($line['nome_categoria']);
+					array_push($r,$ac);
+				};
+				return $r;
+			}
+			
+		}
 		function listarAluno($ra){
 			$db=new Conexao();
 			$sql="Call proc_listarAluno($ra)";

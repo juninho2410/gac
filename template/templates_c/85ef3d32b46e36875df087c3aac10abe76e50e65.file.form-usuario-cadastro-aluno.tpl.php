@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:18:45
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:53:25
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\form-usuario-cadastro-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:285054ec13cdfd0d149-83612523%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '85ef3d32b46e36875df087c3aac10abe76e50e65' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\form-usuario-cadastro-aluno.tpl',
-      1 => 1321708210,
+      1 => 1321710797,
       2 => 'file',
     ),
   ),
@@ -47,22 +47,31 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			
 			<ul class="fields">
 				<li>
-					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150"/>
+					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150" value="<?php echo $_POST['nome'];?>
+"/>
 				</li>
 				<li>
-					<label for="email">Email:</label><input type="text" name="email" id="email" maxlenght="150" />
+					<label for="email">Email:</label><input type="text" name="email" id="email" maxlenght="150" value="<?php echo $_POST['email'];?>
+" />
 				</li>
 				<li>
-					<label for="login">Login:</label><input type="text" name="login" id="login" maxlenght="100" />
+					<label for="login">Login:</label><input type="text" name="login" id="login" maxlenght="100" value="<?php echo $_POST['login'];?>
+" />
 				</li>
 				<li>
-					<label for="senha">Senha:</label><input type="password" name="senha" id="senha" maxlenght="50" />
+					<label for="senha">Senha:</label><input type="password" name="senha" id="senha" maxlenght="50" value="<?php echo $_POST['senha'];?>
+"/>
 				</li>
 				<li>
 					<label for="curso">Curso:</label>
 					<select name="curso">
+					<?php if ($_POST['curso']==''){?>
 						<?php echo smarty_function_html_options(array('values'=>$_smarty_tpl->tpl_vars['id']->value,'selected'=>$_smarty_tpl->tpl_vars['id']->value[0],'output'=>$_smarty_tpl->tpl_vars['nome']->value),$_smarty_tpl);?>
 
+					<?php }else{ ?>
+						<?php echo smarty_function_html_options(array('values'=>$_smarty_tpl->tpl_vars['id']->value,'selected'=>$_POST['curso'],'output'=>$_smarty_tpl->tpl_vars['nome']->value),$_smarty_tpl);?>
+
+					<?php }?>
 					</select>
 				</li>
 			</ul>

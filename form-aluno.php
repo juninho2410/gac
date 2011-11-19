@@ -3,6 +3,7 @@ include_once('./template/includes/smarty.php');
 
 include_once('./template/includes/sessao.php');
 include_once('./template/includes/aluno.class.php');
+include_once('./template/includes/validate.class.php');
 
 
 
@@ -10,6 +11,12 @@ include_once('./template/includes/aluno.class.php');
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 		if($_GET['action']=='cadastro'){
 			if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['login']) && isset($_POST['senha']) && isset($_POST['curso'])){
+			$validate= new validate();
+				if(!$validate->email($_POST['email'])){
+					echo "<script>alert('Email inválido!')</script>";
+				
+				}
+				else{
 				$aluno= new Aluno();
 				$aluno->setNome($_POST['nome']);
 				$aluno->setEmail($_POST['email']);
@@ -32,27 +39,34 @@ include_once('./template/includes/aluno.class.php');
 							echo "<script>alert('Este nome de usuário está indisponível, escolha outro!')</script>";
 				
 				}
-				
+			}
 			
 			
 			}
 		}
 		else if($_GET['action']=='alteracao') {
 			if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['id'])){
-				$aluno= new Aluno();
-				$aluno->setNome($_POST['nome']);
-				$aluno->setEmail($_POST['email']);
-				$aluno->setSenha($_POST['senha']);
-				$aluno->setRa($_POST['id']);
-				if($aluno->altera($aluno)){
-					echo "<script>alert('Alterado com sucesso!');location.href='consulta-aluno.php'</script>";
-					
-				
-				}
-				else{
-					echo "<script>alert('Erro!');</script>";
-				}
-		
+			
+					$validate= new validate();
+					if(!$validate->email($_POST['email'])){
+							echo "<script>alert('Email inválido!')</script>";
+							
+						}
+					else{
+						$aluno= new Aluno();
+						$aluno->setNome($_POST['nome']);
+						$aluno->setEmail($_POST['email']);
+						$aluno->setSenha($_POST['senha']);
+						$aluno->setRa($_POST['id']);
+						if($aluno->altera($aluno)){
+							echo "<script>alert('Alterado com sucesso!');location.href='consulta-aluno.php'</script>";
+							
+						
+						}
+						else{
+							echo "<script>alert('Erro!');</script>";
+						}
+					}
 			}
 		}
 		

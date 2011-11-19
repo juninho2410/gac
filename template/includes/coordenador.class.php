@@ -78,6 +78,7 @@
 			$usuario->email=$db->db->real_escape_string($usuario->email);
 
 			$sql="Call proc_alterarUsuario($usuario->id,'$usuario->email','$usuario->nome','$usuario->senha')";
+			echo $sql;
 			$result=$db->executa($sql);//Executa o update
 			if($result){
 				$db=null;

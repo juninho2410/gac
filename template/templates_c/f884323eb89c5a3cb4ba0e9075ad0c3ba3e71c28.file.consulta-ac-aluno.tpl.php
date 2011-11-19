@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-16 19:59:18
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 12:59:53
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\consulta-ac-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:121594ec42ccf12b269-54167875%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f884323eb89c5a3cb4ba0e9075ad0c3ba3e71c28' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\consulta-ac-aluno.tpl',
-      1 => 1321480739,
+      1 => 1321714789,
       2 => 'file',
     ),
   ),
@@ -63,7 +63,7 @@ $_smarty_tpl->tpl_vars['ac']->_loop = true;
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['ac']->value->getStatus();?>
 </td>
-					<td><a href="form-ac.php?action=alteracao&id=<?php echo $_smarty_tpl->tpl_vars['ac']->value->getId();?>
+					<td><a href="consulta-ac-aluno-detalhes.php?id=<?php echo $_smarty_tpl->tpl_vars['ac']->value->getId();?>
 ">Editar</a></td>                
                 </tr>
                 <?php } ?>

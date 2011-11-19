@@ -3,6 +3,7 @@ include_once('./template/includes/smarty.php');
 
 include_once('./template/includes/sessao.php');;
 include_once('./template/includes/coordenador.class.php');
+include_once('./template/includes/validate.class.php');
 
 
 
@@ -10,6 +11,12 @@ include_once('./template/includes/coordenador.class.php');
 	if($_SERVER['REQUEST_METHOD']=='POST'){
 	if($_GET['action']=='cadastro'){
 			if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['login']) && isset($_POST['senha'])){
+			$validate= new validate();
+			if(!$validate->email($_POST['email'])){
+					echo "<script>alert('Email inv√°lido!')</script>";
+				
+				}
+				else{
 				$coordenador= new Coordenador();
 				$coordenador->setNome($_POST['nome']);
 				$coordenador->setEmail($_POST['email']);
@@ -31,30 +38,38 @@ include_once('./template/includes/coordenador.class.php');
 					}
 				}
 				else{
-							echo "<script>alert('Este nome de usu·rio est· indisponÌvel, escolha outro!')</script>";
+							echo "<script>alert('Este nome de usu√°rio est√° indispon√≠vel, escolha outro!')</script>";
 				
 				}
-				
+			}
 			
 			
 			}
 		}
 		else if($_GET['action']=='alteracao') {
 			if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['id'])){
-				$coordenador= new Coordenador();
-				$coordenador->setNome($_POST['nome']);
-				$coordenador->setEmail($_POST['email']);
-				$coordenador->setSenha($_POST['senha']);
-				$coordenador->setId($_POST['id']);
-				if($coordenador->altera($coordenador)){
-					echo "<script>alert('Alterado com sucesso!');location.href='consulta-coordenador.php'</script>";
-					
-				
-				}
+			
+				$validate= new validate();
+				if(!$validate->email($_POST['email'])){
+						echo "<script>alert('Email inv√°lido!')</script>";
+						
+					}
 				else{
-					echo "<script>alert('Erro!');</script>";
+					$coordenador= new Coordenador();
+					$coordenador->setNome($_POST['nome']);
+					$coordenador->setEmail($_POST['email']);
+				
+					$coordenador->setSenha($_POST['senha']);
+					$coordenador->setId($_POST['id']);
+					if($coordenador->altera($coordenador)){
+						echo "<script>alert('Alterado com sucesso!');location.href='consulta-coordenador.php'</script>";
+						
+					
+					}
+					else{
+						echo "<script>alert('Erro!');</script>";
+					}
 				}
-		
 			}
 		}
 		

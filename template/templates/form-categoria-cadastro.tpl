@@ -18,13 +18,13 @@
 			
 			<ul class="fields">
 				<li>
-					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150"/>
+					<label for="nome">Nome:</label><input type="text" name="nome" id="nome" maxlenght="150" value="{$smarty.post.nome}"/>
 				</li>
 				<li>
-					<label for="limiteatividade">Limite por atividade:</label><input type="text" name="limite_atividade" id="limiteatividade" maxlenght="2"/>
+					<label for="limiteatividade">Limite por atividade:</label><input type="text" name="limite_atividade" id="limiteatividade" maxlength="2"value="{$smarty.post.limite_atividade}" />
 				</li>
 				<li>
-					<label for="limitecategoria">Limite por categoria:</label><input type="text" name="limite_categoria" id="limitecategoria" maxlenght="2"/>
+					<label for="limitecategoria">Limite por categoria:</label><input type="text" name="limite_categoria" id="limitecategoria" maxlength="2" value="{$smarty.post.limite_categoria}"/>
 				</li>
 			</ul>
 		</form>
