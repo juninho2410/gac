@@ -1,13 +1,13 @@
 <div id="menu">
 					<ul>
 						<li>
-							<a href="consulta-usuario.php?from=aluno">Aluno</a>
+							<a href="consulta-aluno.php">Aluno</a>
 						</li>
 						<li>
-							<a href="consulta-usuario.php?from=coordenador">Coordenador</a>
+							<a href="consulta-coordenador.php">Coordenador</a>
 						</li>
 						<li>
-							<a href="consulta-usuario.php?from=administrador">Administrador</a>
+							<a href="consulta-administrador.php">Administrador</a>
 								
 						</li>
 						<li>

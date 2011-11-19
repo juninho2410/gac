@@ -111,9 +111,9 @@
 			}
 			
 		}
-		function relatorioAtividadesSolicitadas(){
+		function relatorioAtividadesSolicitadas($id){
 			$db=new Conexao();
-			$sql="Call proc_relatorioAtividadesSolicitadas";
+			$sql="Call proc_relatorioAtividadeSolicitada($id)";
 			$result=$db->executa($sql);
 			if($result->num_rows==0){
 				return false;

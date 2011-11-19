@@ -5,8 +5,8 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
-			<a href="consulta-usuario.php?from=administrador">Administrador</a> ::
-			<a href="form-usuario.php?from=administrador&action=cadastro">Cadastro de Administradores</a>
+			<a href="consulta-administrador.php">Administrador</a> ::
+			<a href="form-administrador.php?action=cadastro">Cadastro de Administradores</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">

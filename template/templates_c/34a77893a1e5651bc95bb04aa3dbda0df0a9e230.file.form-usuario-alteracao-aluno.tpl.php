@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-14 15:40:21
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:12:08
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\form-usuario-alteracao-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:12124ec13e4aeb0a65-01339295%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '34a77893a1e5651bc95bb04aa3dbda0df0a9e230' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\form-usuario-alteracao-aluno.tpl',
-      1 => 1321292412,
+      1 => 1321708076,
       2 => 'file',
     ),
   ),
@@ -32,8 +32,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
-			<a href="consulta-usuario.php?from=aluno">Aluno</a> ::
-			<a href="form-usuario.php?from=aluno&action=alteracao">Alteração de Alunos</a>
+			<a href="consulta-aluno.php">Aluno</a> ::
+			<a href="form-aluno.php?action=alteracao">Alteração de Alunos</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">

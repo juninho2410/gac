@@ -5,8 +5,8 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
-			<a href="consulta-usuario.php?from=coordenador">Aluno</a> ::
-			<a href="form-usuario.php?from=coordenador&action=alteracao">Alteração de Coordenadores</a>
+			<a href="consulta-coordenador.php">Coordenador</a> ::
+			<a href="form-coordenador.php?action=alteracao">Alteração de Coordenadores</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">

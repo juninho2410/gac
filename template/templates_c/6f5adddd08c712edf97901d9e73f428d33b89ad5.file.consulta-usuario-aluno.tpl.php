@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-14 16:17:48
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 11:12:03
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\consulta-usuario-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:320134ec13d3a9f8bc4-09202752%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6f5adddd08c712edf97901d9e73f428d33b89ad5' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\consulta-usuario-aluno.tpl',
-      1 => 1321294652,
+      1 => 1321707904,
       2 => 'file',
     ),
   ),
@@ -33,12 +33,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
-			<a href="consulta-usuario.php?from=aluno">Aluno</a>
+			<a href="consulta-aluno.php">Aluno</a>
 		</div>
 		<div class="title">
 			<h3 class="user">Aluno</h3>
 			<div class="actions">
-				<a href="form-usuario.php?from=aluno&action=cadastro">Incluir</a>
+				<a href="form-aluno.php?action=cadastro">Incluir</a>
 			</div>
 			</div>
 		<table class="result" cellspacing="0">
@@ -66,7 +66,7 @@ $_smarty_tpl->tpl_vars['aluno']->_loop = true;
 </td>
 					<td><?php echo $_smarty_tpl->tpl_vars['aluno']->value->getCurso();?>
 </td>
-					<td><a href="form-usuario.php?from=aluno&action=alteracao&id=<?php echo $_smarty_tpl->tpl_vars['aluno']->value->getRa();?>
+					<td><a href="form-aluno.php?action=alteracao&id=<?php echo $_smarty_tpl->tpl_vars['aluno']->value->getRa();?>
 ">Editar</a></td>                
                 </tr>
                 <?php } ?>

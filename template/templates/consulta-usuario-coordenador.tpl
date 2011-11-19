@@ -5,12 +5,12 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
-			<a href="consulta-usuario.php?from=coordenador">Coordenador</a>
+			<a href="consulta-coordenador.php">Coordenador</a>
 		</div>
 		<div class="title">
 			<h3 class="user">Coordenador</h3>
 			<div class="actions">
-				<a href="form-usuario.php?from=coordenador&action=cadastro">Incluir</a>
+				<a href="form-coordenador.php?action=cadastro">Incluir</a>
 			</div>
 			</div>
 		<table class="result" cellspacing="0">
@@ -28,7 +28,7 @@
 					<td>{$coordenador->getId()}</td>
 					<td>{$coordenador->getNome()}</td>
 					<td>{$coordenador->getEmail()}</td>
-					<td><a href="form-usuario.php?from=coordenador&action=alteracao&id={$coordenador->getId()}">Editar</a></td>                
+					<td><a href="form-coordenador.php?action=alteracao&id={$coordenador->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
 			</tbody>
