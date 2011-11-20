@@ -23,6 +23,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $cursos!=false}
 			 {foreach from=$cursos item=curso}
                 <tr>
 					<td>{$curso->getId()}</td>
@@ -31,6 +32,11 @@
 					<td><a href="form-curso.php?action=alteracao&id={$curso->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
+				{else}
+					<tr>
+						<td colspan="4">Nenhum curso foi encontrado</td>
+					</tr>
+				{/if}
 			</tbody>
 		</table>
 	

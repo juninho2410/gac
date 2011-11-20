@@ -24,6 +24,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $categorias!=false}
 			 {foreach from=$categorias item=categoria}
                 <tr>
 					<td>{$categoria->getId()}</td>
@@ -33,6 +34,11 @@
 					<td><a href="form-categoria.php?action=alteracao&id={$categoria->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="5">Nenhuma categoria foi encontrada</td>
+				</tr>
+			{/if}
 			</tbody>
 		</table>
 	

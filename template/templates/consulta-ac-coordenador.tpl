@@ -20,6 +20,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $acs!=false}
 			 {foreach from=$acs item=ac}
                 <tr>
 					<td>{$ac->getId()}</td>
@@ -28,6 +29,11 @@
 					<td><a href="consulta-ac-detalhes.php?id={$ac->getId()}">Detalhes</a></td>                
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="4">Nenhuma atividade foi encontrada</td>
+				</tr>
+			{/if}
 			</tbody>
 		</table>
 	

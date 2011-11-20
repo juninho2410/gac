@@ -23,6 +23,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $coordenadores!=false}
 			 {foreach from=$coordenadores item=coordenador}
                 <tr>
 					<td>{$coordenador->getId()}</td>
@@ -31,9 +32,14 @@
 					<td><a href="form-coordenador.php?action=alteracao&id={$coordenador->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="4">Nenhum coordenador foi encontrado</td>
+				</tr>
+			{/if}
 			</tbody>
 		</table>
 	
 </div>
-
+ 
 {include file="footer.tpl"}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-16 21:27:29
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 16:07:40
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\form-ac-cadastro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:172014ec43176b74da7-91999683%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e58418efbf3ebb8e1b9629826314351a060ca71e' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\form-ac-cadastro.tpl',
-      1 => 1321485917,
+      1 => 1321726047,
       2 => 'file',
     ),
   ),
@@ -46,7 +46,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			
 			<ul class="fields">
 				<li>
-					<label for="titulo">Titulo:</label><input type="text" name="titulo" id="titulo" maxlength="150"/>
+					<label for="titulo">Titulo:</label><input type="text" name="titulo" id="titulo" maxlength="150" value="<?php echo $_POST['titulo'];?>
+"/>
 				</li>
 				<li>
 					<label for="categoria">Categoria:</label>
@@ -56,16 +57,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</select>
 				</li>
 				<li>
-					<label for="descricao">Descrição:</label><textarea name="descricao" id="descricao" rows="5" cols="40"></textarea>
+					<label for="descricao">Descrição:</label><textarea name="descricao" id="descricao" rows="5" cols="40"><?php echo $_POST['descricao'];?>
+</textarea>
 				</li>
 				<li>
-					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" />
+					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" value="<?php echo $_POST['data'];?>
+"/>
 				</li>
 				<li>
-					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" />
+					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_POST['carga'];?>
+" />
 				</li>
 				<li>
-					<label for="arquivo">Anexo:</label><input type="file" name="arquivo" id="arquivo" />
+					<label for="arquivo">Anexo:</label><input type="file" name="arquivo" id="arquivo" value="" />
 				</li>
 			</ul>
 		</form>

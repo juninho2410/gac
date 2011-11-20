@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-16 19:34:43
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-19 18:27:54
          compiled from "C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20894ec28a5a7741e3-22313117%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '51c029e1db7786324f279142426d2c2ec4356754' => 
     array (
       0 => 'C:/Users/Junior/Desktop/Xampp/xampplite/htdocs/gac/template/templates\\aluno.tpl',
-      1 => 1321388064,
+      1 => 1321734469,
       2 => 'file',
     ),
   ),
@@ -30,7 +30,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <div id="content">
-	<p>Bem vindo  </p>
+	<p>Bem vindo <?php echo $_SESSION['nome'];?>
+  </p>
 </div>
 <h1>
 <?php echo $_smarty_tpl->tpl_vars['teste']->value;?>

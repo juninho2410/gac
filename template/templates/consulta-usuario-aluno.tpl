@@ -24,6 +24,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $alunos!=false}
 			 {foreach from=$alunos item=aluno}
                 <tr>
 					<td>{$aluno->getRa()}</td>
@@ -33,6 +34,11 @@
 					<td><a href="form-aluno.php?action=alteracao&id={$aluno->getRa()}">Editar</a></td>                
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="5">Nenhum aluno foi encontrado</td>
+				</tr>
+			{/if}
 			</tbody>
 		</table>
 	

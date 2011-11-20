@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-13 22:04:03
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 15:19:28
          compiled from "template/templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:191714ec05af3b52d65-40174573%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ba67bf649426642a5a53d2e2978bfd44b562f288' => 
     array (
       0 => 'template/templates\\index.tpl',
-      1 => 1321225262,
+      1 => 1321368044,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ec05af3cb08b',
   'variables' => 
   array (
     'erro' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ec05af3cb08b',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec05af3cb08b')) {function content_4ec05af3cb08b($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
@@ -42,8 +42,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								</li>
 								<li>
 									<input type="submit" value="Login" class="button" />
-									<span><?php echo $_smarty_tpl->tpl_vars['erro']->value;?>
+									<?php if ($_smarty_tpl->tpl_vars['erro']->value!=''){?>
+										<span><?php echo $_smarty_tpl->tpl_vars['erro']->value;?>
 </span>
+									<?php }?>
 								</li>
 								
 							</ul>

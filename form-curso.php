@@ -1,8 +1,7 @@
 <?php
-
+$permissao="Administrador";
 include_once('./template/includes/smarty.php');
 include_once('./template/includes/sessao.php');
-
 require_once('./template/includes/coordenador.class.php');
 require_once('./template/includes/cursos.class.php');
 

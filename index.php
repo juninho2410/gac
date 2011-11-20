@@ -1,6 +1,5 @@
 <?php
 include_once('./template/includes/smarty.php');
-include_once('./template/includes/sessao.php');
 require('./template/includes/usuario.class.php');
 
 $smarty->assign("erro","");
@@ -15,17 +14,21 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 		
 		}
 		else{
+			session_start();
 			$_SESSION['id']=$logar[0];
 			$_SESSION['nome']=$logar[1];
 			$_SESSION['perfil']=$logar[2];
 			
 			if($_SESSION['perfil']=="Administrador"){
+				
 				header("Location:administrador.php");
 			}
 			else if($_SESSION['perfil']=="Aluno"){
+				
 				header("Location:aluno.php");
 			}
 			else if($_SESSION['perfil']=="Coordenador"){
+				
 				header("Location:coordenador.php");
 			}		
 		}

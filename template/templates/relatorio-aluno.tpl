@@ -18,12 +18,18 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $relatorios!=false}
 			 {foreach from=$relatorios item=relatorio}
                 <tr>
 					<td>{$relatorio.Nome}</td>
 					<td>{$relatorio.total}</td>
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="2">Nenhuma atividade foi aprovada para gerar dados.</td>
+				</tr>
+			{/if}
 			</tbody>
 		</table>
 	

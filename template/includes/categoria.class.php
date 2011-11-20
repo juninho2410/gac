@@ -149,4 +149,24 @@
 			}
 			
 		}
+		function listarLimiteCategoria($id){
+			$db=new Conexao();
+			$sql="Call proc_listarLimiteCategoria($id);";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				$db=null;
+				return false;
+
+			}
+			else{
+				$r=array();
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					array_push($r,$line);
+				};
+				$db=null;
+				
+				return $r;
+			}
+			
+		}
 	}

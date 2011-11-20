@@ -23,6 +23,7 @@
 				</tr>
 			</thead>
 			<tbody>
+			{if $administradores!=false}
 			 {foreach from=$administradores item=administrador}
                 <tr>
 					<td>{$administrador->getId()}</td>
@@ -31,6 +32,12 @@
 					<td><a href="form-administrador.php?action=alteracao&id={$administrador->getId()}">Editar</a></td>                
                 </tr>
                 {/foreach}
+			{else}
+				<tr>
+					<td colspan="4">Nenhum administrador foi encontrado</td>
+				</tr>
+			
+			{/if}
 			</tbody>
 		</table>
 	

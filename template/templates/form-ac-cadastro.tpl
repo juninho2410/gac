@@ -17,7 +17,7 @@
 			
 			<ul class="fields">
 				<li>
-					<label for="titulo">Titulo:</label><input type="text" name="titulo" id="titulo" maxlength="150"/>
+					<label for="titulo">Titulo:</label><input type="text" name="titulo" id="titulo" maxlength="150" value="{$smarty.post.titulo}"/>
 				</li>
 				<li>
 					<label for="categoria">Categoria:</label>
@@ -26,16 +26,16 @@
 					</select>
 				</li>
 				<li>
-					<label for="descricao">Descrição:</label><textarea name="descricao" id="descricao" rows="5" cols="40"></textarea>
+					<label for="descricao">Descrição:</label><textarea name="descricao" id="descricao" rows="5" cols="40">{$smarty.post.descricao}</textarea>
 				</li>
 				<li>
-					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" />
+					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" value="{$smarty.post.data}"/>
 				</li>
 				<li>
-					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" />
+					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$smarty.post.carga}" />
 				</li>
 				<li>
-					<label for="arquivo">Anexo:</label><input type="file" name="arquivo" id="arquivo" />
+					<label for="arquivo">Anexo:</label><input type="file" name="arquivo" id="arquivo" value="" />
 				</li>
 			</ul>
 		</form>

@@ -1,5 +1,5 @@
 <?php
-
+$permissao="Aluno";
 include_once('./template/includes/smarty.php');
 include_once('./template/includes/sessao.php');
 include_once('./template/includes/aluno.class.php');

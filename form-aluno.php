@@ -1,6 +1,6 @@
 <?php
+$permissao="Administrador";
 include_once('./template/includes/smarty.php');
-
 include_once('./template/includes/sessao.php');
 include_once('./template/includes/aluno.class.php');
 include_once('./template/includes/validate.class.php');
