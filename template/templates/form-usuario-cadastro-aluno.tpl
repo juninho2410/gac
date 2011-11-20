@@ -1,6 +1,9 @@
 {config_load file="test.conf" section="setup"}
 {include file="header.tpl" title=foo}
 {include file="menu-administrador.tpl" title=foo}
+{literal}<script src='template/js/jquery.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/functions.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/validaAluno.js' type='text/javascript'></script>{/literal}
 
 <div id="content">
 		<div id="breadcrumb">

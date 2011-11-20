@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 16:09:21
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 21:11:40
          compiled from "template/templates\consulta-usuario-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:183514ec9383c60a206-55505114%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4aee6b20d1fb3170352fc5e3ee31921353b21d74' => 
     array (
       0 => 'template/templates\\consulta-usuario-coordenador.tpl',
-      1 => 1321810055,
+      1 => 1321812783,
       2 => 'file',
     ),
   ),
@@ -47,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<td>Id</td>
 					<td>Nome</td>
 					<td>Email</td>
-					<td>Ação</td>
+					<td>AÃ§Ã£o</td>
 				</tr>
 			</thead>
 			<tbody>

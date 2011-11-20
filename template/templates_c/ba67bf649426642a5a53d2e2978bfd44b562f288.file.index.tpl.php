@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 15:19:28
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 17:00:36
          compiled from "template/templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:191714ec05af3b52d65-40174573%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ba67bf649426642a5a53d2e2978bfd44b562f288' => 
     array (
       0 => 'template/templates\\index.tpl',
-      1 => 1321368044,
+      1 => 1321812710,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div id="content">
 	<div class="login">
-					<p>Informe seu login e sua senha para acesso ao Sistema de Gest„o de Atividades Complementares</p>
+					<p>Informe seu login e sua senha para acesso ao Sistema de Gest√£o de Atividades Complementares</p>
 					
 					
 						<form method="post" action="#">

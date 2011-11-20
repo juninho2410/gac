@@ -3,6 +3,7 @@ $permissao="Aluno";
 include_once('./template/includes/smarty.php');
 include_once('./template/includes/sessao.php');
 
+require_once('./template/includes/aluno.class.php');
 require_once('./template/includes/coordenador.class.php');
 require_once('./template/includes/categoria.class.php');
 require_once('./template/includes/ac.class.php');
@@ -14,7 +15,10 @@ define('MB',1048576);
 		if($_GET['action']=='cadastro'){
 			if(isset($_POST['titulo']) && isset($_POST['categoria']) && isset($_POST['descricao']) && isset($_POST['data']) && isset($_POST['carga']) && isset($_FILES['arquivo'])){
 				$categoria = new Categoria();
-				$limites=$categoria->listarLimiteCategoria($_POST['categoria']);
+				$aluno = new Aluno();
+				$limites=$categoria->listarLimiteCategoria($_POST['categoria']);//Limites da categoria escolhida
+				$qtdeHorasCategoria=$aluno->quantidadeHorasCategoria($_SESSION['id'],$_POST['categoria']);//Quantidade de Horas que o aluno tem naquela categoria
+				$qtdeResultante=$qtdeHorasCategoria+(double)$_POST['categoria'];//Quantidade de Horas que ficaria se inserir essa ac.
 				$tamanhoArquivo=$_FILES['arquivo']['size'];
 				$tamanhoPermitido=5*MB;
 				$fileName=$_FILES['arquivo']['name'];
@@ -41,6 +45,9 @@ define('MB',1048576);
 				}
 				else if(!in_array($fileExtension,$extensoesPermitidas)){
 						echo "<script>alert('Extensão não permitida.')</script>";
+				}
+				else if($qtdeResultante > $limites[0]['limite_categoria']){
+						echo "<script>alert('Você já tem $qtdeHorasCategoria horas nesta categoria e o limite é ".$limites[0]['limite_categoria'].". Favor inserir valor inferior a esse limite')</script>";
 				}
 				
 				else{
@@ -70,12 +77,23 @@ define('MB',1048576);
 							$dir = "$diretorio/".$nomeArquivo;
 							move_uploaded_file($_FILES['arquivo']["tmp_name"],$dir);
 							
-							$coordenador= new Coordenador()
+							$coordenador= new Coordenador();
 							$email=$coordenador->emailCoordenador($_SESSION['id']);
 							if($email!=false){
-								$to=$email;
+								$to=(string)$email;
 								$subject="Atividade Complementar Pendente de Avaliação";
-								$msg<<< <html>;
+								$headers  = 'MIME-Version: 1.0' . "\r\n";
+								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+								$headers .= 'From: Sistema GAC <junior@apsinfo.com.br>' . "\r\n";
+								$msg=' 
+								<html>
+								<body>
+									<h1><font color="blue">Atividade complementar pendente de avaliação</font></h1>
+									<p>Favor logar no sistema e realizar a aprovação ou reprovação da mesma.</p>
+								</body>
+								</html>';
+								mail($to,$subject,$msg,$headers);
+								
 							
 							}
 							
@@ -113,14 +131,6 @@ if($_GET['action']=='cadastro'){
 
 	
 }
-/*
-else if($_GET['action']=='alteracao'){
-	$categoria= new Categoria();
-	$result=$categoria->listarCategoria($_GET['id']);
-	if($result!=false){
-		$smarty->assign('categoria',$result);
-	}
-	$smarty->display('form-categoria-alteracao.tpl');
-}*/
+
 
 ?>

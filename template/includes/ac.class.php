@@ -98,6 +98,15 @@
 		
 		function insere($ac){
 			$db=new Conexao();
+			$ac->id=$db->db->real_escape_string($ac->id);
+			$ac->idAlunoRa=$db->db->real_escape_string($ac->idAlunoRa);
+			$ac->titulo=$db->db->real_escape_string($ac->titulo);
+			$ac->idCategoria=$db->db->real_escape_string($ac->idCategoria);
+			$ac->descricao=$db->db->real_escape_string($ac->descricao);
+			$ac->dataRealizacao=$db->db->real_escape_string($ac->dataRealizacao);
+			$ac->ch=$db->db->real_escape_string($ac->ch);
+			$ac->nomeArquivo=$db->db->real_escape_string($ac->nomeArquivo);
+			
 			$sql="Call proc_inserirAC($ac->idAlunoRa,'$ac->titulo',$ac->idCategoria,'$ac->descricao','$ac->dataRealizacao',$ac->ch,'$ac->nomeArquivo')";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result->num_rows!=0){
@@ -113,7 +122,10 @@
 		}
 		function altera($ac){
 			$db=new Conexao();
-			
+			$ac->id=$db->db->real_escape_string($ac->id);
+			$ac->ch=$db->db->real_escape_string($ac->ch);
+			$ac->status=$db->db->real_escape_string($ac->status);
+			$ac->comentario=$db->db->real_escape_string($ac->comentario);
 			$sql="Call proc_alterarAc($ac->id,$ac->ch,'$ac->status','$ac->comentario')";
 			$result=$db->executa($sql);//Executa o update
 			if($result){
@@ -189,7 +201,9 @@
 					$ac->setComentario($line['comentario']);
 					$ac->setNomeArquivo($line['nome_arquivo']);
 					$ac->setNomeAluno($line['nome_aluno']);
+					$ac->setIdAlunoRa($line['aluno_ra']);
 					$ac->setNomeCategoria($line['nome_categoria']);
+					$ac->setIdCategoria($line['idCategoria']);
 					array_push($r,$ac);
 				};
 				return $r;
@@ -218,6 +232,7 @@
 					$ac->setComentario($line['comentario']);
 					$ac->setNomeArquivo($line['nome_arquivo']);
 					$ac->setNomeAluno($line['nome_aluno']);
+					
 					$ac->setNomeCategoria($line['nome_categoria']);
 					array_push($r,$ac);
 				};
@@ -225,5 +240,6 @@
 			}
 			
 		}
+		
 
 	}

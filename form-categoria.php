@@ -13,9 +13,11 @@ require_once('./template/includes/categoria.class.php');
 		if($_GET['action']=='cadastro'){
 			if(isset($_POST['nome']) && isset($_POST['limite_atividade']) && isset($_POST['limite_categoria'])){
 				
-				if(!is_numeric($_POST['limite_atividade'])){
+				if($_POST['limite_atividade']!=""){
+					if(!is_numeric($_POST['limite_atividade'])){
 					echo "<script>alert('Digite apenas números nos campos de Limite por atividade');</script>";
 				
+					}
 				}else if(!is_numeric($_POST['limite_categoria'])){
 					echo "<script>alert('Digite apenas números nos campos de Limite por categoria');</script>";
 				}

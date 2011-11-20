@@ -150,4 +150,28 @@
 			}
 			
 		}
+		function quantidadeHorasCategoria($ra,$idCategoria){
+			$db=new Conexao();
+			$id=$db->db->real_escape_string($id);
+			$sql="Call proc_relatorioPorTipodeAC($ra,$idCategoria)";
+			
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				$db=null;
+				return false;
+
+			}
+			else{
+				$r="";
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					$r=$line['total'];
+				
+					
+				};
+				$db=null;
+				return $r;
+				
+			}
+			
+		}
 	}

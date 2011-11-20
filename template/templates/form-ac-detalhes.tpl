@@ -22,9 +22,10 @@
 				</li>
 				<li>
 					<label for="aluno">Nome do Aluno:</label><label>{$ac.0->getNomeAluno()}</label>
+					<input type="hidden" value="{$ac.0->getIdAlunoRa()}" name="ra" />
 				</li>
 				<li>
-					<label for="categoria">Categoria:</label><label for="categoria">{$ac.0->getNomeCategoria()}</label>
+					<label for="categoria">Categoria:</label><label for="categoria">{$ac.0->getNomeCategoria()}</label><input type="hidden" name="idCategoria" value="{$ac.0->getIdCategoria()}" />
 				</li>
 				<li>
 					<label for="descricao">Descrição:</label><label>{$ac.0->getDescricao()}</label>
