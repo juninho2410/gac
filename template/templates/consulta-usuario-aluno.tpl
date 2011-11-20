@@ -20,7 +20,7 @@
 					<td>Nome</td>
 					<td>Email</td>
 					<td>Curso</td>
-					<td>Ação</td>
+					<td>AÃ§Ã£o</td>
 				</tr>
 			</thead>
 			<tbody>

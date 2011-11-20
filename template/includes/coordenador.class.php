@@ -181,4 +181,27 @@
 			}
 			
 		}
+		function emailCoordenador($id){
+			$db=new Conexao();
+			$id=$db->db->real_escape_string($id);
+			$sql="Call proc_emailCoordenador($id)";
+			$result=$db->executa($sql);
+			if($result->num_rows==0){
+				$db=null;
+				return false;
+
+			}
+			else{
+				$r="";
+				while($line=$result->fetch_array(MYSQLI_ASSOC)){
+					$r=$line['Email'];
+				
+					
+				};
+				$db=null;
+				return $r;
+				
+			}
+			
+		}
 	}

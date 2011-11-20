@@ -69,6 +69,16 @@ define('MB',1048576);
 							}
 							$dir = "$diretorio/".$nomeArquivo;
 							move_uploaded_file($_FILES['arquivo']["tmp_name"],$dir);
+							
+							$coordenador= new Coordenador()
+							$email=$coordenador->emailCoordenador($_SESSION['id']);
+							if($email!=false){
+								$to=$email;
+								$subject="Atividade Complementar Pendente de Avaliação";
+								$msg<<< <html>;
+							
+							}
+							
 							echo "<script>alert('Atividade cadastrada com sucesso!');location.href='consulta-ac.php';</script>";
 							echo $arquivo;
 						

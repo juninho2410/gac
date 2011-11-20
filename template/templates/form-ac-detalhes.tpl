@@ -27,22 +27,22 @@
 					<label for="categoria">Categoria:</label><label for="categoria">{$ac.0->getNomeCategoria()}</label>
 				</li>
 				<li>
-					<label for="descricao">DescriÁ„o:</label><label>{$ac.0->getDescricao()}</label>
+					<label for="descricao">Descri√ß√£o:</label><label>{$ac.0->getDescricao()}</label>
 				</li>
 				<li>
-					<label for="data">Data de RealizaÁ„o:</label><label>{$ac.0->getDataRealizacao()}</label>
+					<label for="data">Data de Realiza√ß√£o:</label><label>{$ac.0->getDataRealizacao()}</label>
 				</li>
 				<li>
-					<label for="ch">Carga Hor·ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$ac.0->getCh()}" />
+					<label for="ch">Carga Hor√°ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$ac.0->getCh()}" />
 				</li>
 				<li>
-					<label for="comentario">Coment·rio:</label><textarea name="comentario">{$ac.0->getComentario()}</textarea>
+					<label for="comentario">Coment√°rio:</label><textarea name="comentario">{$ac.0->getComentario()}</textarea>
 				</li>
 				<li>
 					<label for="arquivo">Anexo:</label><a href="comprovantes/{$ac.0->getNomeArquivo()}">Vizualizar Arquivo</a>
 				</li>
 				<li>
-					<label for="aprovacao">AprovaÁ„o:</label>
+					<label for="aprovacao">Aprova√ß√£o:</label>
 					<select name="aprovacao">
 						<option value="0">Aprovado</option>
 						<option value="1">Reprovado</option>

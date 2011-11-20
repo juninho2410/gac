@@ -6,7 +6,7 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-coordenador.php">Coordenador</a> ::
-			<a href="form-coordenador.php?action=alteracao">Alteração de Coordenadores</a>
+			<a href="form-coordenador.php?action=alteracao">AlteraÃ§Ã£o de Coordenadores</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">

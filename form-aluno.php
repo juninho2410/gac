@@ -13,7 +13,7 @@ include_once('./template/includes/validate.class.php');
 			if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['login']) && isset($_POST['senha']) && isset($_POST['curso'])){
 			$validate= new validate();
 				if(!$validate->email($_POST['email'])){
-					echo "<script>alert('Email inv·lido!')</script>";
+					echo "<script>alert('Email inv√°lido!')</script>";
 				
 				}
 				else{
@@ -36,7 +36,7 @@ include_once('./template/includes/validate.class.php');
 					}
 				}
 				else{
-							echo "<script>alert('Este nome de usu·rio est· indisponÌvel, escolha outro!')</script>";
+							echo "<script>alert('Este nome de usu√°rio est√° indispon√≠vel, escolha outro!')</script>";
 				
 				}
 			}
@@ -49,7 +49,7 @@ include_once('./template/includes/validate.class.php');
 			
 					$validate= new validate();
 					if(!$validate->email($_POST['email'])){
-							echo "<script>alert('Email inv·lido!')</script>";
+							echo "<script>alert('Email inv√°lido!')</script>";
 							
 						}
 					else{

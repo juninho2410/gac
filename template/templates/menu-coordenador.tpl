@@ -1,13 +1,13 @@
 <div id="menu">
 					<ul>
 						<li>
-							<a href="coordenador.php">Início</a>
+							<a href="coordenador.php">InÃ­cio</a>
 						</li>			
 						<li>
 							<a href="consulta-ac-coordenador.php">Consulta AC</a>
 						</li>
 						<li class="last">
-							<a href="relatorio-coordenador.php">Relatório Atividade</a>
+							<a href="relatorio-coordenador.php">RelatÃ³rio Atividade</a>
 						</li>				
 					</ul>
 				</div>

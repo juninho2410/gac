@@ -225,27 +225,5 @@
 			}
 			
 		}
-		function listarAluno($ra){
-			$db=new Conexao();
-			$sql="Call proc_listarAluno($ra)";
-			$result=$db->executa($sql);
-			if($result->num_rows==0){
-				return false;
 
-			}
-			else{
-				$r=array();
-				while($line=$result->fetch_array(MYSQLI_ASSOC)){
-					$al = new Aluno();
-					$al->setNome($line['Nome']);
-					$al->setEmail($line['Email']);
-					$al->setSenha($line['Senha']);
-					$al->setIdUsuario($line['idUsuario']);
-					array_push($r,$al);
-					
-				};
-				return $r;
-			}
-			
-		}
 	}
