@@ -1,6 +1,8 @@
 {config_load file="test.conf" section="setup"}
 {include file="header.tpl" title=foo}
 {include file="menu-coordenador.tpl" title=foo}
+{literal}<script src='template/js/jquery.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/validaAcAlteracao.js' type='text/javascript'></script>{/literal}
 
 <div id="content">
 		<div id="breadcrumb">
@@ -37,14 +39,14 @@
 					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$ac.0->getCh()}" />
 				</li>
 				<li>
-					<label for="comentario">Comentário:</label><textarea name="comentario">{$ac.0->getComentario()}</textarea>
+					<label for="comentario">Comentário:</label><textarea name="comentario" id="comentario">{$ac.0->getComentario()}</textarea>
 				</li>
 				<li>
 					<label for="arquivo">Anexo:</label><a href="comprovantes/{$ac.0->getNomeArquivo()}">Vizualizar Arquivo</a>
 				</li>
 				<li>
 					<label for="aprovacao">Aprovação:</label>
-					<select name="aprovacao">
+					<select name="aprovacao" id="aprovacao">
 						<option value="0">Aprovado</option>
 						<option value="1">Reprovado</option>
 					</select>
