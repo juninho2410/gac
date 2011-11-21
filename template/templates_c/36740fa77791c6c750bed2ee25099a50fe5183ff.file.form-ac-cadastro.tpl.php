@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 17:03:42
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:05:59
          compiled from "template/templates\form-ac-cadastro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:200324ec94f0edb01f5-06232699%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '36740fa77791c6c750bed2ee25099a50fe5183ff' => 
     array (
       0 => 'template/templates\\form-ac-cadastro.tpl',
-      1 => 1321812754,
+      1 => 1321833958,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ec94f0eea252',
   'variables' => 
   array (
     'id' => 0,
     'nome' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ec94f0eea252',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec94f0eea252')) {function content_4ec94f0eea252($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_options')) include 'libs/plugins\function.html_options.php';
 ?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
@@ -30,6 +30,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <?php echo $_smarty_tpl->getSubTemplate ("menu-aluno.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
+<script src='template/js/jquery.js' type='text/javascript'></script>
+<script src='template/js/formatadores.js' type='text/javascript'></script>
+<script src='template/js/functions.js' type='text/javascript'></script>
+<script src='template/js/validaCadastroAc.js' type='text/javascript'></script>
 
 <div id="content">
 		<div id="breadcrumb">
@@ -62,7 +66,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				</li>
 				<li>
 					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" value="<?php echo $_POST['data'];?>
-"/>
+" onkeyup="formataData(this,event);"/>
 				</li>
 				<li>
 					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_POST['carga'];?>

@@ -1,6 +1,10 @@
 {config_load file="test.conf" section="setup"}
 {include file="header.tpl" title=foo}
 {include file="menu-aluno.tpl" title=foo}
+{literal}<script src='template/js/jquery.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/formatadores.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/functions.js' type='text/javascript'></script>{/literal}
+{literal}<script src='template/js/validaCadastroAc.js' type='text/javascript'></script>{/literal}
 
 <div id="content">
 		<div id="breadcrumb">
@@ -29,7 +33,7 @@
 					<label for="descricao">Descrição:</label><textarea name="descricao" id="descricao" rows="5" cols="40">{$smarty.post.descricao}</textarea>
 				</li>
 				<li>
-					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" value="{$smarty.post.data}"/>
+					<label for="data">Data de Realização:</label><input type="text" name="data" id="data" maxlength="10" value="{$smarty.post.data}" onkeyup="formataData(this,event);"/>
 				</li>
 				<li>
 					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$smarty.post.carga}" />
