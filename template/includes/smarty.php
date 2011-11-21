@@ -11,5 +11,5 @@
 	$smarty->compile_dir = TEMPLATE_PATH.'templates_c/';
 	$smarty->config_dir = TEMPLATE_PATH.'configs/';
 	$smarty->cache_dir = TEMPLATE_PATH.'cache/';
-	$smarty->assign('dir','/gac/template/');
+	$smarty->assign('dir',TEMPLATE_PATH);
 	?>
