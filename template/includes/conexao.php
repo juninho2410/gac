@@ -1,7 +1,7 @@
 <?php
 	class Conexao{
 	protected $host='localhost';
-	protected $usuario='root';
+	protected $usuario='gac';
 	protected $senha='';
 	protected $banco='gac';
 	public $db;
