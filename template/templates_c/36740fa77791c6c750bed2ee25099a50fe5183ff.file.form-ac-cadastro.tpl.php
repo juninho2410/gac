@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:05:59
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:26:14
          compiled from "template/templates\form-ac-cadastro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:200324ec94f0edb01f5-06232699%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '36740fa77791c6c750bed2ee25099a50fe5183ff' => 
     array (
       0 => 'template/templates\\form-ac-cadastro.tpl',
-      1 => 1321833958,
+      1 => 1321842318,
       2 => 'file',
     ),
   ),
@@ -38,11 +38,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div id="content">
 		<div id="breadcrumb">
 			<a href="aluno.php">Aluno</a> ::
-			<a href="form-ac.php?action=cadastro">Cadastro de AC</a>
+			<a href="#">Cadastro de AC</a>
 		</div>
 		<form method="post" action="#" enctype="multipart/form-data">
 			<div class="title">
-				<h3 class="user">Cadastro de AC</h3>
+				<h3 class="atividade">Cadastro de Atividade Complementar</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

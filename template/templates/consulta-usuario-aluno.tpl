@@ -8,7 +8,7 @@
 			<a href="consulta-aluno.php">Aluno</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Aluno</h3>
+			<h3 class="aluno">Aluno</h3>
 			<div class="actions">
 				<a href="form-aluno.php?action=cadastro">Incluir</a>
 			</div>

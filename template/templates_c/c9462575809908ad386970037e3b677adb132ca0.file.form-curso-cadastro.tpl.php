@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 21:16:52
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:22:29
          compiled from "template/templates\form-curso-cadastro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:5054ec989a95bd996-48688030%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c9462575809908ad386970037e3b677adb132ca0' => 
     array (
       0 => 'template/templates\\form-curso-cadastro.tpl',
-      1 => 1321831004,
+      1 => 1321842110,
       2 => 'file',
     ),
   ),
@@ -36,11 +36,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-curso.php">Cursos</a> ::
-			<a href="form-curso.php?action=cadastro">Cadastro de Cursos</a>
+			<a href="#">Cadastro de Cursos</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Cursos</h3>
+				<h3 class="user">Cadastro de Curso</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

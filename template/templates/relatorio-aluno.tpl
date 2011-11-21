@@ -8,7 +8,7 @@
 			<a href="relatorio-aluno.php">Relatório</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Relatório</h3>
+			<h3 class="relatorio">Relatório</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>

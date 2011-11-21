@@ -5,10 +5,10 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="Aluno.php">Aluno</a> ::
-			<a href="consulta-ac.php?from=aluno">Consulta de ACs</a>
+			<a href="#">Consulta de Atividades Complementares</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Consulta de Acs</h3>
+			<h3 class="atividade">Consulta de Atividades Complementares</h3>
 			<div class="actions">
 				<a href="form-ac.php?action=cadastro">Incluir</a>
 			</div>

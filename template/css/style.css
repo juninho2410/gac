@@ -156,12 +156,46 @@ body{
 	padding: 0 0 0 30px;
 	float:left;
 }
+#content .title h3.aluno,
+#content .title h3.coordenador,
+#content .title h3.administrador,
+#content .title h3.curso,
+#content .title h3.categoria,
+#content .title h3.atividade,
+#content .title h3.relatorio
+{
+   background: url(../img/icons.png) no-repeat 0 5px;	
+   line-height: 22px;
+}
+#content .title h3.aluno{
+	background-position: 0 -315px;
+}
+#content .title h3.coordenador{
+	background-position: 0 -254px;
+}
+#content .title h3.administrador{
+	background-position: 0 -191px;
+}
+#content .title h3.curso{
+	background-position: 0 -191px;
+}
+#content .title h3.categoria{
+	background-position: 0 -5px;
+}
+#content .title h3.atividade{
+	background-position:0 -129px;
+}
+#content .title h3.relatorio{
+	background-position:0 -66px;
+}
+
 #content .title h3.user{
    background: url(../img/userIcon.png) no-repeat 0 5px;	
    line-height: 26px;
    
    
 }
+
 #content .title .actions{
    float:right;
 }

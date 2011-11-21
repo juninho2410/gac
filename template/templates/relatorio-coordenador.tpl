@@ -8,7 +8,7 @@
 			<a href="relatorio-coordenador.php">Relatório</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Relatório de Categorias Solicitadas</h3>
+			<h3 class="relatorio">Relatório de Categorias Solicitadas</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>

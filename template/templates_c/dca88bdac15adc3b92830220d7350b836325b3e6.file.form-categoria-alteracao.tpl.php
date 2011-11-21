@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:29:05
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:22:12
          compiled from "template/templates\form-categoria-alteracao.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:109764ec99a824b6f90-52056639%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dca88bdac15adc3b92830220d7350b836325b3e6' => 
     array (
       0 => 'template/templates\\form-categoria-alteracao.tpl',
-      1 => 1321835317,
+      1 => 1321842008,
       2 => 'file',
     ),
   ),
@@ -34,11 +34,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-categoria.php">Categorias</a> ::
-			<a href="form-categoria.php?action=alteracao">Altera��o de Categorias</a>
+			<a href="#">Alteração de Categoria</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Categorias</h3>
+				<h3 class="categoria">Alteração de Categoria</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

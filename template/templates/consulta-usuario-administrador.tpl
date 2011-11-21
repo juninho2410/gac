@@ -8,7 +8,7 @@
 			<a href="consulta-administrador.php">Consulta de Administradores</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Administrador</h3>
+			<h3 class="administrador">Administradores</h3>
 			<div class="actions">
 				<a href="form-administrador.php?action=cadastro">Incluir</a>
 			</div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:29:35
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:22:40
          compiled from "template/templates\form-curso-alteracao.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:255124ec943560957c6-84857282%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f7bfca17cc6de09a39dd3402adfb7d73f8152ad6' => 
     array (
       0 => 'template/templates\\form-curso-alteracao.tpl',
-      1 => 1321835365,
+      1 => 1321842119,
       2 => 'file',
     ),
   ),
@@ -37,11 +37,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-curso.php">Cursos</a> ::
-			<a href="form-usuario.php?action=alteracao">Alteração de Cursos</a>
+			<a href="#">Alteração de Curso</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Cursos</h3>
+				<h3 class="user">Alteração de Curso</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

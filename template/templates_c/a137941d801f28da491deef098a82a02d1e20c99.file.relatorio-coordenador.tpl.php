@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 20:13:51
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:31:54
          compiled from "template/templates\relatorio-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:203204ec97b9f951032-66354557%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a137941d801f28da491deef098a82a02d1e20c99' => 
     array (
       0 => 'template/templates\\relatorio-coordenador.tpl',
-      1 => 1321812738,
+      1 => 1321842708,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ec97b9fbb6a1',
   'variables' => 
   array (
     'relatorios' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'total' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ec97b9fbb6a1',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec97b9fbb6a1')) {function content_4ec97b9fbb6a1($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
@@ -37,7 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<a href="relatorio-coordenador.php">Relatório</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Relatório de Categorias Solicitadas</h3>
+			<h3 class="relatorio">Relatório de Categorias Solicitadas</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>

@@ -9,11 +9,11 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="aluno.php">Aluno</a> ::
-			<a href="form-ac.php?action=cadastro">Cadastro de AC</a>
+			<a href="#">Cadastro de Atividade Complementar</a>
 		</div>
 		<form method="post" action="#" enctype="multipart/form-data">
 			<div class="title">
-				<h3 class="user">Cadastro de AC</h3>
+				<h3 class="atividade">Cadastro de Atividade Complementar</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

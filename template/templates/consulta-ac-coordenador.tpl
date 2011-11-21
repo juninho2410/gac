@@ -5,10 +5,10 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="coordenador.php">Coordenador</a> ::
-			<a href="consulta-ac.php?from=coordenador">Consulta de ACs pendentes</a>
+			<a href="consulta-ac.php?from=coordenador">Consulta de Atividades Pendentes</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Consulta de Acs</h3>
+			<h3 class="atividade">Consulta de Atividades Pendentes</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>

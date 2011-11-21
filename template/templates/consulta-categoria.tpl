@@ -8,7 +8,7 @@
 			<a href="consulta-curso.php">Categorias</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Categorias</h3>
+			<h3 class="categoria">Categorias</h3>
 			<div class="actions">
 				<a href="form-categoria.php?action=cadastro">Incluir</a>
 			</div>

@@ -8,11 +8,11 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-aluno.php">Aluno</a> ::
-			<a href="form-aluno.php?action=alteracao">Alteração de Alunos</a>
+			<a href="#">Alteração de Aluno</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Aluno</h3>
+				<h3 class="aluno">Alteração de Aluno</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 21:13:03
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:13:20
          compiled from "template/templates\form-usuario-cadastro-administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:200194ec9897fe734d6-34196661%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'af05f3c67e23a195602456f69646b71fb34159d4' => 
     array (
       0 => 'template/templates\\form-usuario-cadastro-administrador.tpl',
-      1 => 1321830776,
+      1 => 1321841392,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
   'unifunc' => 'content_4ec989800a19c',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec989800a19c')) {function content_4ec989800a19c($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
@@ -26,16 +26,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <script src='template/js/jquery.js' type='text/javascript'></script>
 <script src='template/js/functions.js' type='text/javascript'></script>
-<script src='template/js/validaAluno.js' type='text/javascript'></script>
+<script src='template/js/validaUsuario.js' type='text/javascript'></script>
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-administrador.php">Administrador</a> ::
-			<a href="form-administrador.php?action=cadastro">Cadastro de Administradores</a>
+			<a href="form-administrador.php?action=cadastro">Cadastro de Administrador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Administradores</h3>
+				<h3 class="administrador">Cadastro de Administrador</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

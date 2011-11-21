@@ -7,11 +7,11 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-curso.php">Cursos</a> ::
-			<a href="form-curso.php?action=cadastro">Cadastro de Cursos</a>
+			<a href="#">Cadastro de Cursos</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Cursos</h3>
+				<h3 class="user">Cadastro de Curso</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

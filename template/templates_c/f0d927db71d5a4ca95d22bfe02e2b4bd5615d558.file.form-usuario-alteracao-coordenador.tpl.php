@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:30:31
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:22:59
          compiled from "template/templates\form-usuario-alteracao-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:207544ec99a6fc6a643-68240860%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f0d927db71d5a4ca95d22bfe02e2b4bd5615d558' => 
     array (
       0 => 'template/templates\\form-usuario-alteracao-coordenador.tpl',
-      1 => 1321835229,
+      1 => 1321842087,
       2 => 'file',
     ),
   ),
@@ -36,11 +36,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-coordenador.php">Coordenador</a> ::
-			<a href="form-coordenador.php?action=alteracao">Alteração de Coordenadores</a>
+			<a href="#">Alteração de Coordenador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Coordenador</h3>
+				<h3 class="coordenador">Alteração de Coordenador</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

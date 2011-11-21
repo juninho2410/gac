@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 21:14:11
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:18:37
          compiled from "template/templates\consulta-categoria.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:259184ec989c354d460-37874352%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '480747f84b67157601a067b1d2661cf7e3e23a4a' => 
     array (
       0 => 'template/templates\\consulta-categoria.tpl',
-      1 => 1321812794,
+      1 => 1321841872,
       2 => 'file',
     ),
   ),
@@ -15,14 +15,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ec989c36ff32',
   'variables' => 
   array (
     'categorias' => 0,
     'categoria' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ec989c36ff32',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec989c36ff32')) {function content_4ec989c36ff32($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
@@ -36,7 +36,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<a href="consulta-curso.php">Categorias</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Categorias</h3>
+			<h3 class="categoria">Categorias</h3>
 			<div class="actions">
 				<a href="form-categoria.php?action=cadastro">Incluir</a>
 			</div>

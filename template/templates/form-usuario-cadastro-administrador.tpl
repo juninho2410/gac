@@ -8,11 +8,11 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-administrador.php">Administrador</a> ::
-			<a href="form-administrador.php?action=cadastro">Cadastro de Administradores</a>
+			<a href="#">Cadastro de Administrador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Administradores</h3>
+				<h3 class="administrador">Cadastro de Administrador</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

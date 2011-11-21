@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 21:11:43
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:23:08
          compiled from "template/templates\form-usuario-cadastro-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:44614ec9892f589164-74567930%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fffd1d014cb1d1c437cf2f9a06ea8a2ef0e5f89b' => 
     array (
       0 => 'template/templates\\form-usuario-cadastro-coordenador.tpl',
-      1 => 1321812717,
+      1 => 1321842052,
       2 => 'file',
     ),
   ),
@@ -15,25 +15,27 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
   'unifunc' => 'content_4ec9892f745ac',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec9892f745ac')) {function content_4ec9892f745ac($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
 <?php echo $_smarty_tpl->getSubTemplate ("menu-administrador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
-
+<script src='template/js/jquery.js' type='text/javascript'></script>
+<script src='template/js/functions.js' type='text/javascript'></script>
+<script src='template/js/validaUsuario.js' type='text/javascript'></script>
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-coordenador.php">Coordenador</a> ::
-			<a href="form-coordenador.php?action=cadastro">Cadastro de Coordenadores</a>
+			<a href="#">Cadastro de Coordenador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Coordenadores</h3>
+				<h3 class="coordenador">Cadastro de Coordenador</h3>
 				<div class="actions">
 					<input type="submit" value="Incluir" />
 				</div>

@@ -8,7 +8,7 @@
 			<a href="consulta-coordenador.php">Coordenador</a>
 		</div>
 		<div class="title">
-			<h3 class="user">Coordenador</h3>
+			<h3 class="coordenador">Coordenadores</h3>
 			<div class="actions">
 				<a href="form-coordenador.php?action=cadastro">Incluir</a>
 			</div>

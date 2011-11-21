@@ -7,11 +7,11 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-curso.php">Cursos</a> ::
-			<a href="form-usuario.php?action=alteracao">Alteração de Cursos</a>
+			<a href="#">Alteração de Curso</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Cursos</h3>
+				<h3 class="user">Alteração de Curso</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

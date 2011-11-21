@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:30:16
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:13:15
          compiled from "template/templates\form-usuario-alteracao-administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:125154ec99a75beab06-03569576%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '846da987e190b2263c7854d7653334acd8ed6989' => 
     array (
       0 => 'template/templates\\form-usuario-alteracao-administrador.tpl',
-      1 => 1321835276,
+      1 => 1321841593,
       2 => 'file',
     ),
   ),
@@ -35,11 +35,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-administrador.php"> Administradores</a> ::
-			<a href="form-administrador.php?action=alteracao">Alteração de Administradores</a>
+			<a href="form-administrador.php?action=alteracao">Alteração de Administrador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="user">Administrador</h3>
+				<h3 class="administrador">Alteracao de Administrador</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

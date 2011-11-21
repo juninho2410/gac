@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 17:00:48
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:00:34
          compiled from "template/templates\menu-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:28454ec94e6001eaf0-18614718%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fff0c095ad6d250ea00542fb0f3c0555a0db18c3' => 
     array (
       0 => 'template/templates\\menu-aluno.tpl',
-      1 => 1321812745,
+      1 => 1321838933,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty 3.1.4',
   'unifunc' => 'content_4ec94e6003fa3',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec94e6003fa3')) {function content_4ec94e6003fa3($_smarty_tpl) {?><div id="menu">
 					<ul>
@@ -32,7 +32,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</li>
 						<li class="last">
 							<a href="relatorio-aluno.php">Relatório Atividade</a>
-						</li>			
+						</li>
+						
+							
+						
 					</ul>
+					<a class="logout" href="logout.php">Sair</a>
 				</div>
 <?php }} ?>
