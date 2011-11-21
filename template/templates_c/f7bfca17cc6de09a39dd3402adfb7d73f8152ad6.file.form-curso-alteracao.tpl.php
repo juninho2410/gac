@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 16:13:42
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:29:35
          compiled from "template/templates\form-curso-alteracao.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:255124ec943560957c6-84857282%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f7bfca17cc6de09a39dd3402adfb7d73f8152ad6' => 
     array (
       0 => 'template/templates\\form-curso-alteracao.tpl',
-      1 => 1321812762,
+      1 => 1321835365,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty 3.1.4',
+  'unifunc' => 'content_4ec9435626cb7',
   'variables' => 
   array (
     'curso' => 0,
@@ -22,8 +24,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'nome' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty 3.1.4',
-  'unifunc' => 'content_4ec9435626cb7',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_4ec9435626cb7')) {function content_4ec9435626cb7($_smarty_tpl) {?><?php if (!is_callable('smarty_function_html_options')) include 'libs/plugins\function.html_options.php';
 ?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
@@ -31,7 +31,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <?php echo $_smarty_tpl->getSubTemplate ("menu-administrador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
-
+<script src='template/js/jquery.js' type='text/javascript'></script>
+<script src='template/js/validaCurso.js' type='text/javascript'></script>
 <div id="content">
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
