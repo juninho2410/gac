@@ -1,7 +1,7 @@
 {config_load file="test.conf" section="setup"}
-{include file="header.tpl" title=foo}
+{include file="header-index.tpl" title=foo}
 
-<div id="content">
+<div id="content" class="bgLogin">
 	<div class="login">
 					<p>Informe seu login e sua senha para acesso ao Sistema de Gestão de Atividades Complementares</p>
 					

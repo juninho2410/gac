@@ -15,7 +15,7 @@
 						</li>					
 						<li class="last">
 							<a href="consulta-categoria.php">Categorias</a> <!-- Qual o motivo da classe aqui???-->
-							
-						</li>					
+						</li>
 					</ul>
+					<a class="logout" href="logout.php">Sair</a>
 				</div>

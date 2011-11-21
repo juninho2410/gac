@@ -11,6 +11,10 @@
 						</li>
 						<li class="last">
 							<a href="relatorio-aluno.php">Relatório Atividade</a>
-						</li>			
+						</li>
+						
+							
+						
 					</ul>
+					<a class="logout" href="logout.php">Sair</a>
 				</div>

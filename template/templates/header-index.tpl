@@ -8,7 +8,7 @@
 	<body>
 		<div id="container">
 			<div id="main">
-				<div id= "header">
+				<div id= "header" class="bgLogin">
 					<div id="logo"></div>
 					<h1> Faculdade Impacta </h1>
 					<h2> GAC - Gestão de Atividades Complementares </h2>

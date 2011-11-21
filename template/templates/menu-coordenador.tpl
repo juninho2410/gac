@@ -10,4 +10,5 @@
 							<a href="relatorio-coordenador.php">Relatório Atividade</a>
 						</li>				
 					</ul>
+					<a class="logout" href="logout.php">Sair</a>
 				</div>

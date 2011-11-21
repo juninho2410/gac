@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 16:13:24
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 23:29:29
          compiled from "template/templates\menu-administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:50064ec938362f5667-31587445%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '406d6642165f5e2c170929dda36ae2951b84edec' => 
     array (
       0 => 'template/templates\\menu-administrador.tpl',
-      1 => 1321812748,
+      1 => 1321838958,
       2 => 'file',
     ),
   ),
@@ -36,8 +36,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						</li>					
 						<li class="last">
 							<a href="consulta-categoria.php">Categorias</a> <!-- Qual o motivo da classe aqui???-->
-							
-						</li>					
+						</li>
 					</ul>
+					<a class="logout" href="logout.php">Sair</a>
 				</div>
 <?php }} ?>
