@@ -3,7 +3,7 @@
 
 <div id="content" class="bgLogin">
 	<div class="login">
-					<p>Informe seu login e sua senha para acesso ao Sistema de Gest√£o de Atividades Complementares</p>
+					<p>Informe seu login e sua senha para acesso ao Sistema de Gest„o de Atividades Complementares</p>
 					
 					
 						<form method="post" action="#">

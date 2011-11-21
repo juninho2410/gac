@@ -108,7 +108,7 @@
 			$ac->nomeArquivo=$db->db->real_escape_string($ac->nomeArquivo);
 			
 			$sql="Call proc_inserirAC($ac->idAlunoRa,'$ac->titulo',$ac->idCategoria,'$ac->descricao','$ac->dataRealizacao',$ac->ch,'$ac->nomeArquivo')";
-			$result=$db->executa($sql);//Executa a inserção
+			$result=$db->executa($sql);//Executa a inserÃ§Ã£o
 			if($result->num_rows!=0){
 				$nome="";
 				while($line=$result->fetch_array(MYSQLI_ASSOC)){

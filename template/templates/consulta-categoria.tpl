@@ -20,7 +20,7 @@
 					<td>Nome</td>
 					<td>Limite por Atividade</td>
 					<td>Limite por Categoria</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

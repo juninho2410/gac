@@ -26,85 +26,37 @@ define('MB',1048576);
 				$fileExtension=$fileExtension[1];
 				$extensoesPermitidas=array('pdf','jpg','png','gif');
 		
-		
+				
 				if(!is_numeric($_POST['carga'])){
-					echo "<script>alert('Digite apenas n√∫meros na Carga hor√°ria')</script>";
+				
+					echo "<script>alert('Digite apenas n˙meros na Carga hor·ria')</script>";
 				}else if($limites[0]['limite_atividade']!=0){
+					
+					
 					if($_POST['carga'] > $limites[0]['limite_atividade']){
-						echo "<script>alert('O limite de carga hor√°ria permitido para esta atividade √© de ".$limites[0]['limite_atividade'] .". Favor inserir valor inferior a este limite! ')</script>";
-						
+							echo "<script>alert('O limite de carga hor·ria permitido para esta atividade È de ".$limites[0]['limite_atividade'] .". Favor inserir valor inferior a este limite! ')</script>";
+							
+					}else{
+						cadastrarAC();
 					}
-				
-				}else if($_POST['carga'] > $limites[0]['limite_categoria']){
-				
-						echo "<script>alert('O limite de carga hor√°ria permitido para esta categoria √© de ".$limites[0]['limite_categoria'] .". Favor inserir valor inferior a este limite! ')</script>";
+		
+										
+				}
+				else if($_POST['carga'] > $limites[0]['limite_categoria']){
+						echo "<script>alert('O limite de carga hor·ria permitido para esta categoria È de ".$limites[0]['limite_categoria'] .". Favor inserir valor inferior a este limite! ')</script>";
 				
 				}
 				else if($tamanhoArquivo>$tamanhoPermitido){
 						echo "<script>alert('Tamanho superior a 5 mb. Anexe um arquivo inferior a 5 mb.')</script>";
 				}
 				else if(!in_array($fileExtension,$extensoesPermitidas)){
-						echo "<script>alert('Extens√£o n√£o permitida.')</script>";
+						echo "<script>alert('Extens„o n„o permitida.')</script>";
 				}
 				else if($qtdeResultante > $limites[0]['limite_categoria']){
-						echo "<script>alert('Voc√™ j√° tem $qtdeHorasCategoria horas nesta categoria e o limite √© ".$limites[0]['limite_categoria'].". Favor inserir valor inferior a esse limite')</script>";
+						echo "<script>alert('VocÍ j· tem $qtdeHorasCategoria horas nesta categoria e o limite È ".$limites[0]['limite_categoria'].". Favor inserir valor inferior a esse limite')</script>";				
 				}
-				
 				else{
-				
-
-					$ac= new Atividade();
-					$ac->setIdAlunoRa($_SESSION['id']);
-					$ac->setTitulo($_POST['titulo']);
-					$ac->setIdCategoria($_POST['categoria']);
-					$ac->setDescricao($_POST['descricao']);
-					$ac->setDataRealizacao($_POST['data']);
-					$ac->setCh($_POST['carga']);
-					$file=explode('.',$_FILES['arquivo']['name']);
-					$ac->setNomeArquivo('ac.'.$file[1]);
-					$nomeArquivo=$ac->insere($ac);
-					
-					
-						if($nomeArquivo!=false){
-							//echo "<script>alert('Categoria cadastrado com sucesso!');location.href='consulta-ac.php';</script>";
-								$diretorio='comprovantes';
-							if(!is_dir($diretorio)){
-							
-								mkdir($diretorio);// Cria diretorio
-								chmod($diretorio,0777);//Seta permissao total
-				
-							}
-							$dir = "$diretorio/".$nomeArquivo;
-							move_uploaded_file($_FILES['arquivo']["tmp_name"],$dir);
-							
-							$coordenador= new Coordenador();
-							$email=$coordenador->emailCoordenador($_SESSION['id']);
-							if($email!=false){
-								$to=(string)$email;
-								$subject="Atividade Complementar Pendente de Avalia√ß√£o";
-								$headers  = 'MIME-Version: 1.0' . "\r\n";
-								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-								$headers .= 'From: Sistema GAC <junior@apsinfo.com.br>' . "\r\n";
-								$msg=' 
-								<html>
-								<body>
-									<h1><font color="blue">Atividade complementar pendente de avalia√ß√£o</font></h1>
-									<p>Favor logar no sistema e realizar a aprova√ß√£o ou reprova√ß√£o da mesma.</p>
-								</body>
-								</html>';
-								mail($to,$subject,$msg,$headers);
-								
-							
-							}
-							
-							echo "<script>alert('Atividade cadastrada com sucesso!');location.href='consulta-ac.php';</script>";
-							echo $arquivo;
-						
-						}
-						else{
-							echo "<script>alert('Erro ao cadastrar!')</script>";
-						
-						}
+					cadastrarAC();
 				}
 			}
 				
@@ -132,5 +84,66 @@ if($_GET['action']=='cadastro'){
 	
 }
 
+function cadastrarAC(){
 
+				
+
+					$ac= new Atividade();
+					$ac->setIdAlunoRa($_SESSION['id']);
+					$ac->setTitulo($_POST['titulo']);
+					$ac->setIdCategoria($_POST['categoria']);
+					$ac->setDescricao($_POST['descricao']);
+					$data=explode("/",$_POST['data']);
+					$data=$data[2].'-'.$data[1].'-'.$data[0];
+			
+					$ac->setDataRealizacao($data);
+					$ac->setCh($_POST['carga']);
+					$file=explode('.',$_FILES['arquivo']['name']);
+					$ac->setNomeArquivo('ac.'.$file[1]);
+					$nomeArquivo=$ac->insere($ac);
+					
+					
+						if($nomeArquivo!=false){
+							//echo "<script>alert('Categoria cadastrado com sucesso!');location.href='consulta-ac.php';</script>";
+								$diretorio='comprovantes';
+							if(!is_dir($diretorio)){
+							
+								mkdir($diretorio);// Cria diretorio
+								chmod($diretorio,0777);//Seta permissao total
+				
+							}
+							$dir = "$diretorio/".$nomeArquivo;
+							move_uploaded_file($_FILES['arquivo']["tmp_name"],$dir);
+							
+							$coordenador= new Coordenador();
+							$email=$coordenador->emailCoordenador($_SESSION['id']);
+							if($email!=false){
+								$to=(string)$email;
+								$subject="Atividade Complementar Pendente de AvaliaÁ„o";
+								$headers  = 'MIME-Version: 1.0' . "\r\n";
+								$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+								$headers .= 'From: Sistema GAC <junior@apsinfo.com.br>' . "\r\n";
+								$msg=' 
+								<html>
+								<body>
+									<h1><font color="blue">Atividade complementar pendente de avaliaÁ„o</font></h1>
+									<p>Favor logar no sistema e realizar a aprovaÁ„o ou reprovaÁ„o da mesma.</p>
+								</body>
+								</html>';
+								mail($to,$subject,$msg,$headers);
+								
+							
+							}
+							
+							echo "<script>alert('Atividade cadastrada com sucesso!');location.href='consulta-ac.php';</script>";
+							echo $arquivo;
+						
+						}
+						else{
+							echo "<script>alert('Erro ao cadastrar!')</script>";
+						
+						}
+
+
+}
 ?>

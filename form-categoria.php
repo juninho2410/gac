@@ -15,15 +15,15 @@ require_once('./template/includes/categoria.class.php');
 				
 				if($_POST['limite_atividade']!=""){
 					if(!is_numeric($_POST['limite_atividade'])){
-					echo "<script>alert('Digite apenas nÃºmeros nos campos de Limite por atividade');</script>";
+					echo "<script>alert('Digite apenas números nos campos de Limite por atividade');</script>";
 				
 					}
 				}else if(!is_numeric($_POST['limite_categoria'])){
-					echo "<script>alert('Digite apenas nÃºmeros nos campos de Limite por categoria');</script>";
+					echo "<script>alert('Digite apenas números nos campos de Limite por categoria');</script>";
 				}
 				else if($_POST['limite_atividade'] > $_POST['limite_categoria']){
 					
-					echo "<script>alert('Limite por atividade nÃ£o pode ser maior que o limite por categoria');</script>";
+					echo "<script>alert('Limite por atividade não pode ser maior que o limite por categoria');</script>";
 				}
 				else{
 						$categoria= new Categoria();
@@ -52,14 +52,14 @@ require_once('./template/includes/categoria.class.php');
 				else if($_GET['action']=='alteracao') {
 			if(isset($_POST['nome']) && isset($_POST['limite_atividade']) && isset($_POST['limite_categoria']) && isset($_POST['id'])){
 				if(!is_numeric($_POST['limite_atividade'])){
-					echo "<script>alert('Digite apenas nÃºmeros nos campos de Limite por atividade');</script>";
+					echo "<script>alert('Digite apenas números nos campos de Limite por atividade');</script>";
 				
 				}else if(!is_numeric($_POST['limite_categoria'])){
-					echo "<script>alert('Digite apenas nÃºmeros nos campos de Limite por categoria');</script>";
+					echo "<script>alert('Digite apenas números nos campos de Limite por categoria');</script>";
 				}
 				else if($_POST['limite_atividade'] > $_POST['limite_categoria']){
 					
-					echo "<script>alert('Limite por atividade nÃ£o pode ser maior que o limite por categoria');</script>";
+					echo "<script>alert('Limite por atividade não pode ser maior que o limite por categoria');</script>";
 				}
 				else{
 					$categoria= new Categoria();

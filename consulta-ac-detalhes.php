@@ -28,7 +28,7 @@ include_once('./template/includes/categoria.class.php');
 				$qtdeHorasCategoria=$aluno->quantidadeHorasCategoria($_POST['ra'],$_POST['idCategoria']);
 				$qtdeHorasResultante=$qtdeHorasCategoria+$_POST['carga'];
 				if($qtdeHorasResultante > $limites[0]['limite_categoria']){
-					echo "<script>alert('Voc√™ n√£o pode aprovar esta Atividade! Este aluno j√° tem $qtdeHorasCategoria horas nesta categoria, o limite desta categoria √© ". $limites[0]['limite_categoria'].". Altere a carga para um valor inferior caso queira aprovar esta Atividade!')</script>";
+					echo "<script>alert('VocÍ n„o pode aprovar esta Atividade! Este aluno j· tem $qtdeHorasCategoria horas nesta categoria, o limite desta categoria È ". $limites[0]['limite_categoria'].". Altere a carga para um valor inferior caso queira aprovar esta Atividade!')</script>";
 				}
 				else{
 				
@@ -48,7 +48,7 @@ include_once('./template/includes/categoria.class.php');
 			}
 			else if($_POST['aprovacao']==1){
 				if($_POST['comentario']==""){
-					echo "<script>alert('Insira um coment√°rio a respeito da sua reprova√ß√£o')</script>";
+					echo "<script>alert('Insira um coment·rio a respeito da sua reprovaÁ„o')</script>";
 				}
 				else{
 					$ac->setStatus('Reprovado');

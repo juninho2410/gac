@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:31:54
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 20:16:54
          compiled from "template/templates\relatorio-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:203204ec97b9f951032-66354557%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a137941d801f28da491deef098a82a02d1e20c99' => 
     array (
       0 => 'template/templates\\relatorio-coordenador.tpl',
-      1 => 1321842708,
+      1 => 1321913517,
       2 => 'file',
     ),
   ),
@@ -34,10 +34,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div id="content">
 		<div id="breadcrumb">
 			<a href="coordenador.php">Coordenador</a> ::
-			<a href="relatorio-coordenador.php">RelatÃ³rio</a>
+			<a href="relatorio-coordenador.php">Relatório</a>
 		</div>
 		<div class="title">
-			<h3 class="relatorio">RelatÃ³rio de Categorias Solicitadas</h3>
+			<h3 class="relatorio">Relatório de Categorias Solicitadas</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>

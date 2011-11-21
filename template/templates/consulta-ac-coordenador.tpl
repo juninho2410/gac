@@ -14,9 +14,9 @@
 			<thead>
 				<tr>
 					<td>Id</td>
-					<td>TÃ­tulo</td>
+					<td>Título</td>
 					<td>Status</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

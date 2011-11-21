@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:31:33
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 20:16:51
          compiled from "template/templates\consulta-ac-coordenador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:153854ec97ba2f15466-94172586%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e0d19a8521c615092f8f9b1d91a113cde4e2dc62' => 
     array (
       0 => 'template/templates\\consulta-ac-coordenador.tpl',
-      1 => 1321842682,
+      1 => 1321913531,
       2 => 'file',
     ),
   ),
@@ -42,9 +42,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<thead>
 				<tr>
 					<td>Id</td>
-					<td>TÃ­tulo</td>
+					<td>Título</td>
 					<td>Status</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

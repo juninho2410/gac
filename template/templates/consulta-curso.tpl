@@ -19,7 +19,7 @@
 					<td>Id</td>
 					<td>Nome</td>
 					<td>Coordenador</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

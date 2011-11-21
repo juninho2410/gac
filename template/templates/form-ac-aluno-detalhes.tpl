@@ -25,13 +25,13 @@
 					<label for="categoria">Categoria:</label><label for="categoria">{$ac.0->getNomeCategoria()}</label>
 				</li>
 				<li>
-					<label for="descricao">Descri√ß√£o:</label><label>{$ac.0->getDescricao()}</label>
+					<label for="descricao">DescriÁ„o:</label><label>{$ac.0->getDescricao()}</label>
 				</li>
 				<li>
-					<label for="data">Data de Realiza√ß√£o:</label><label>{$ac.0->getDataRealizacao()}</label>
+					<label for="data">Data de RealizaÁ„o:</label><label>{$ac.0->getDataRealizacao()|date_format:"%d/%m/%Y"}</label>
 				</li>
 				<li>
-					<label for="ch">Carga Hor√°ria:</label><label id="ch">{$ac.0->getCh()}</label>
+					<label for="ch">Carga Hor·ria:</label><label id="ch">{$ac.0->getCh()}</label>
 				</li>
 				<li>
 					<label for="arquivo">Anexo:</label><a href="comprovantes/{$ac.0->getNomeArquivo()}">Vizualizar Arquivo</a>

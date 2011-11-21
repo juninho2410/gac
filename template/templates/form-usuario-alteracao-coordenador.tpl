@@ -9,11 +9,11 @@
 		<div id="breadcrumb">
 			<a href="administrador.php">Administrador</a> ::
 			<a href="consulta-coordenador.php">Coordenador</a> ::
-			<a href="#">AlteraÃ§Ã£o de Coordenador</a>
+			<a href="#">Alteração de Coordenador</a>
 		</div>
 		<form method="post" action="#">
 			<div class="title">
-				<h3 class="coordenador">AlteraÃ§Ã£o de Coordenador</h3>
+				<h3 class="coordenador">Alteração de Coordenador</h3>
 				<div class="actions">
 					<input type="submit" value="Salvar" />
 				</div>

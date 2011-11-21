@@ -5,16 +5,16 @@
 <div id="content">
 		<div id="breadcrumb">
 			<a href="aluno.php">Aluno</a> ::
-			<a href="relatorio-aluno.php">Relat√≥rio</a>
+			<a href="relatorio-aluno.php">RelatÛrio</a>
 		</div>
 		<div class="title">
-			<h3 class="relatorio">Relat√≥rio</h3>
+			<h3 class="relatorio">RelatÛrio</h3>
 			</div>
 		<table class="result" cellspacing="0">
 			<thead>
 				<tr>
 					<td>Categoria</td>
-					<td>Total de Carga Hor√°ria</td>
+					<td>Total de Carga Hor·ria</td>
 				</tr>
 			</thead>
 			<tbody>

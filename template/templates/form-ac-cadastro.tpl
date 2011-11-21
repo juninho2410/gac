@@ -30,13 +30,13 @@
 					</select>
 				</li>
 				<li>
-					<label for="descricao">Descri√ß√£o:</label><textarea name="descricao" id="descricao" rows="5" cols="40">{$smarty.post.descricao}</textarea>
+					<label for="descricao">DescriÁ„o:</label><textarea name="descricao" id="descricao" rows="5" cols="40">{$smarty.post.descricao}</textarea>
 				</li>
 				<li>
-					<label for="data">Data de Realiza√ß√£o:</label><input type="text" name="data" id="data" maxlength="10" value="{$smarty.post.data}" onkeyup="formataData(this,event);"/>
+					<label for="data">Data de RealizaÁ„o:</label><input type="text" name="data" id="data" maxlength="10" value="{$smarty.post.data}" onkeyup="formataData(this,event);"/>
 				</li>
 				<li>
-					<label for="ch">Carga Hor√°ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$smarty.post.carga}" />
+					<label for="ch">Carga Hor·ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$smarty.post.carga}" />
 				</li>
 				<li>
 					<label for="arquivo">Anexo:</label><input type="file" name="arquivo" id="arquivo" value="" />
