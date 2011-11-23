@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:18:37
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-22 19:34:00
          compiled from "template/templates\consulta-categoria.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:259184ec989c354d460-37874352%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '480747f84b67157601a067b1d2661cf7e3e23a4a' => 
     array (
       0 => 'template/templates\\consulta-categoria.tpl',
-      1 => 1321841872,
+      1 => 1321913535,
       2 => 'file',
     ),
   ),
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<td>Nome</td>
 					<td>Limite por Atividade</td>
 					<td>Limite por Categoria</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

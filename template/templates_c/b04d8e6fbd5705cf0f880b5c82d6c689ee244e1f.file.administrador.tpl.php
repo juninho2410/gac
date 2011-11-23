@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 20:13:28
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-22 20:03:34
          compiled from "template/templates\administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:142174ec938360f70b6-55168359%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b04d8e6fbd5705cf0f880b5c82d6c689ee244e1f' => 
     array (
       0 => 'template/templates\\administrador.tpl',
-      1 => 1321812735,
+      1 => 1321999341,
       2 => 'file',
     ),
   ),
@@ -26,8 +26,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
 <div id="content">
-	<p>Bem vindo <?php echo $_SESSION['nome'];?>
- </p>
+	<p>Caro (a) <?php echo $_SESSION['nome'];?>
+: </p>
+	<p>Você poderá cadastrar os <strong>Administradores</strong>, <strong>Coordenadores</strong> e <strong>Alunos</strong>, além dos <strong>Cursos</strong> e <strong>Categorias</strong>.</p><p> Para isso, através dos links acima, você chegará às páginas correspondentes para a efetivação dos devidos cadastros. </p>
+	<p>Você deverá iniciar os cadastros pelos <strong>coordenadores</strong>, depois os <strong>cursos</strong> que eles coordenam.</p>
+	<p>Após isso cadastre os <strong>alunos</strong> e o curso relacionado a ele.</p>
+	<p>Para finalizar, cadastre as <strong>categorias</strong> de atividades complementares.</p>
 </div>
 
 <?php echo $_smarty_tpl->getSubTemplate ("footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>

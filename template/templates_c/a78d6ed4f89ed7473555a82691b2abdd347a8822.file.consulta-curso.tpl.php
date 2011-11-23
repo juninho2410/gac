@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:22:12
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-22 19:33:16
          compiled from "template/templates\consulta-curso.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:122354ec943515bab95-88517467%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a78d6ed4f89ed7473555a82691b2abdd347a8822' => 
     array (
       0 => 'template/templates\\consulta-curso.tpl',
-      1 => 1321841772,
+      1 => 1321913539,
       2 => 'file',
     ),
   ),
@@ -47,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<td>Id</td>
 					<td>Nome</td>
 					<td>Coordenador</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

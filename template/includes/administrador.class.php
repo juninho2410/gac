@@ -45,7 +45,7 @@
 			$usuario->senha=$db->db->real_escape_string($usuario->senha);
 			$usuario->nome=$db->db->real_escape_string($usuario->nome);
 			$usuario->email=$db->db->real_escape_string($usuario->email);
-			$sql="Call proc_inserirAdministrador('$usuario->login','$usuario->senha','Coordenador','$usuario->nome','$usuario->email',@msg)";
+			$sql="Call proc_inserirAdministrador('$usuario->login','$usuario->senha','Administrador','$usuario->nome','$usuario->email',@msg)";
 			$result=$db->executa($sql);//Executa a inserção
 			if($result){
 				if($result=$db->executa("Select @msg")){

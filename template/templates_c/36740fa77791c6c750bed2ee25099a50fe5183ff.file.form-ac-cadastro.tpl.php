@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 19:00:02
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 21:20:53
          compiled from "template/templates\form-ac-cadastro.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:200324ec94f0edb01f5-06232699%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '36740fa77791c6c750bed2ee25099a50fe5183ff' => 
     array (
       0 => 'template/templates\\form-ac-cadastro.tpl',
-      1 => 1321842520,
+      1 => 1321913616,
       2 => 'file',
     ),
   ),
@@ -61,15 +61,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					</select>
 				</li>
 				<li>
-					<label for="descricao">Descri√ß√£o:</label><textarea name="descricao" id="descricao" rows="5" cols="40"><?php echo $_POST['descricao'];?>
+					<label for="descricao">DescriÁ„o:</label><textarea name="descricao" id="descricao" rows="5" cols="40"><?php echo $_POST['descricao'];?>
 </textarea>
 				</li>
 				<li>
-					<label for="data">Data de Realiza√ß√£o:</label><input type="text" name="data" id="data" maxlength="10" value="<?php echo $_POST['data'];?>
+					<label for="data">Data de RealizaÁ„o:</label><input type="text" name="data" id="data" maxlength="10" value="<?php echo $_POST['data'];?>
 " onkeyup="formataData(this,event);"/>
 				</li>
 				<li>
-					<label for="ch">Carga Hor√°ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_POST['carga'];?>
+					<label for="ch">Carga Hor·ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_POST['carga'];?>
 " />
 				</li>
 				<li>

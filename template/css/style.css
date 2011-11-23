@@ -126,6 +126,9 @@ body{
 
 
 }
+#content p{
+	margin:10px 0 0 0
+}
 #content.bgLogin{
 	background: url(../img/bgLogin.jpg) no-repeat;
 	height:461px;

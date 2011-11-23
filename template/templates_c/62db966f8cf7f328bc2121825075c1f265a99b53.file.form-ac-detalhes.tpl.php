@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 22:43:40
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-22 20:09:28
          compiled from "template/templates\form-ac-detalhes.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:289064ec97c2f717e70-43776383%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '62db966f8cf7f328bc2121825075c1f265a99b53' => 
     array (
       0 => 'template/templates\\form-ac-detalhes.tpl',
-      1 => 1321836204,
+      1 => 1321999765,
       2 => 'file',
     ),
   ),
@@ -23,7 +23,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_4ec97c2f8b967')) {function content_4ec97c2f8b967($_smarty_tpl) {?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
+<?php if ($_valid && !is_callable('content_4ec97c2f8b967')) {function content_4ec97c2f8b967($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include 'libs/plugins\modifier.date_format.php';
+?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
 
 <?php echo $_smarty_tpl->getSubTemplate ("menu-coordenador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('title'=>'foo'), 0);?>
@@ -62,19 +63,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 " />
 				</li>
 				<li>
-					<label for="descricao">Descri√ß√£o:</label><label><?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getDescricao();?>
+					<label for="descricao">DescriÁ„o:</label><label><?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getDescricao();?>
 </label>
 				</li>
 				<li>
-					<label for="data">Data de Realiza√ß√£o:</label><label><?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getDataRealizacao();?>
+					<label for="data">Data de RealizaÁ„o:</label><label><?php echo smarty_modifier_date_format($_smarty_tpl->tpl_vars['ac']->value[0]->getDataRealizacao(),"%d/%m/%Y");?>
 </label>
 				</li>
 				<li>
-					<label for="ch">Carga Hor√°ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getCh();?>
+					<label for="ch">Carga Hor·ria:</label><input type="text" name="carga" id="ch" maxlength="2" value="<?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getCh();?>
 " />
 				</li>
 				<li>
-					<label for="comentario">Coment√°rio:</label><textarea name="comentario" id="comentario"><?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getComentario();?>
+					<label for="comentario">Coment·rio:</label><textarea name="comentario" id="comentario"><?php echo $_smarty_tpl->tpl_vars['ac']->value[0]->getComentario();?>
 </textarea>
 				</li>
 				<li>
@@ -82,7 +83,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ">Vizualizar Arquivo</a>
 				</li>
 				<li>
-					<label for="aprovacao">Aprova√ß√£o:</label>
+					<label for="aprovacao">AprovaÁ„o:</label>
 					<select name="aprovacao" id="aprovacao">
 						<option value="0">Aprovado</option>
 						<option value="1">Reprovado</option>

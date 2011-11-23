@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 00:11:52
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 21:36:08
          compiled from "template/templates\consulta-usuario-administrador.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:208984ec98932bf71d7-30094214%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f3d9b00689e508fa3d6e4348cdd0e1cae3a03b4a' => 
     array (
       0 => 'template/templates\\consulta-usuario-administrador.tpl',
-      1 => 1321841508,
+      1 => 1321913543,
       2 => 'file',
     ),
   ),
@@ -47,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<td>Id</td>
 					<td>Nome</td>
 					<td>Email</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>

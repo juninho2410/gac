@@ -33,7 +33,7 @@
 					<label for="descricao">Descrição:</label><label>{$ac.0->getDescricao()}</label>
 				</li>
 				<li>
-					<label for="data">Data de Realização:</label><label>{$ac.0->getDataRealizacao()}</label>
+					<label for="data">Data de Realização:</label><label>{$ac.0->getDataRealizacao()|date_format:"%d/%m/%Y"}</label>
 				</li>
 				<li>
 					<label for="ch">Carga Horária:</label><input type="text" name="carga" id="ch" maxlength="2" value="{$ac.0->getCh()}" />

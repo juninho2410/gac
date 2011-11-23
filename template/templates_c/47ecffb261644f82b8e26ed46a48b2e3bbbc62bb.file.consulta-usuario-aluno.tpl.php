@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty 3.1.4, created on 2011-11-20 23:57:22
+<?php /* Smarty version Smarty 3.1.4, created on 2011-11-21 21:35:29
          compiled from "template/templates\consulta-usuario-aluno.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:207734ec9426c92c3d2-94719953%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '47ecffb261644f82b8e26ed46a48b2e3bbbc62bb' => 
     array (
       0 => 'template/templates\\consulta-usuario-aluno.tpl',
-      1 => 1321840576,
+      1 => 1321913631,
       2 => 'file',
     ),
   ),
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					<td>Nome</td>
 					<td>Email</td>
 					<td>Curso</td>
-					<td>AÃ§Ã£o</td>
+					<td>Ação</td>
 				</tr>
 			</thead>
 			<tbody>
